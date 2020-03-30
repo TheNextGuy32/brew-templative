@@ -1,11 +1,12 @@
 class Templative < Formula 
+  include Language::Python::Virtualenv
+
   desc "Automate card sheet -> TCG"
   homepage "https://github.com/TheNextGuy32/templative"
   url "https://github.com/TheNextGuy32/templative/archive/0.1.0.tar.gz"
   sha256 "b00270058687cbf3939528efd36026103b12f505f5a69e97556d3fa99419c939"
 
-  include Language::Python::Virtualenv
-
+  
   depends_on "cairo"
   depends_on "fontconfig"
   depends_on "freetype"
@@ -15,12 +16,12 @@ class Templative < Formula
   depends_on "glib"
   depends_on "graphite2"
   depends_on "harfbuzz"
-  depends_on "icu4c"
+  uses_from_macos "icu4c"
   depends_on "ilmbase"
   depends_on "imagemagick"
   depends_on "jpeg"
   depends_on "libde265"
-  depends_on "libffi"
+  uses_from_macos "libffi"
   depends_on "libheif"
   depends_on "libomp"
   depends_on "libpng"
@@ -33,13 +34,13 @@ class Templative < Formula
   depends_on "openssl@1.1"
   depends_on "pango"
   depends_on "pcre"
-  depends_on "pipenv"
+  # depends_on "pipenv"
   depends_on "pixman"
   depends_on "python"
   depends_on "python@3.8"
   depends_on "readline"
   depends_on "shared-mime-info"
-  depends_on "sqlite"
+  uses_from_macos "sqlite"
   depends_on "webp"
   depends_on "x265"
   depends_on "xz"
@@ -290,7 +291,7 @@ class Templative < Formula
   end
 
   def install
-    virtualenv_install_with_resources(using: "python@3.8")
-    bin.install "templative"
+    virtualenv_install_with_resources(:using => "python@3.8")
+    # bin.install "templative"
   end
 end
