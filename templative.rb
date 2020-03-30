@@ -6,7 +6,8 @@ class Templative < Formula
   url "https://github.com/TheNextGuy32/templative/archive/0.1.0.tar.gz"
   sha256 "b00270058687cbf3939528efd36026103b12f505f5a69e97556d3fa99419c939"
 
-  
+  depends_on "python@3.8"
+
   depends_on "cairo"
   depends_on "fontconfig"
   depends_on "freetype"
@@ -16,12 +17,10 @@ class Templative < Formula
   depends_on "glib"
   depends_on "graphite2"
   depends_on "harfbuzz"
-  uses_from_macos "icu4c"
   depends_on "ilmbase"
   depends_on "imagemagick"
   depends_on "jpeg"
   depends_on "libde265"
-  uses_from_macos "libffi"
   depends_on "libheif"
   depends_on "libomp"
   depends_on "libpng"
@@ -34,16 +33,16 @@ class Templative < Formula
   depends_on "openssl@1.1"
   depends_on "pango"
   depends_on "pcre"
-  # depends_on "pipenv"
   depends_on "pixman"
-  depends_on "python"
-  depends_on "python@3.8"
   depends_on "readline"
   depends_on "shared-mime-info"
-  uses_from_macos "sqlite"
   depends_on "webp"
   depends_on "x265"
   depends_on "xz"
+
+  uses_from_macos "icu4c"
+  uses_from_macos "libffi"
+  uses_from_macos "sqlite"
 
   resource "aiofile" do
     url "https://files.pythonhosted.org/packages/71/7c/d6df3b2c8fb380ef7f678c366dc4485dfeb389967d373b1dc5d53bd1dcf0/aiofile-1.5.2.tar.gz"
@@ -292,6 +291,9 @@ class Templative < Formula
 
   def install
     virtualenv_install_with_resources(:using => "python@3.8")
-    # bin.install "templative"
+  end
+
+  test do
+    
   end
 end
