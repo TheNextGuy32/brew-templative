@@ -290,7 +290,7 @@ class Templative < Formula
   end
 
   def install
-    virtualenv_install_with_resources
+    virtualenv_install_with_resources(using: "python@3.8")
     bin.install "templative"
   end
 end
