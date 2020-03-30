@@ -36,8 +36,8 @@ class Templative < Formula
   depends_on "shared-mime-info"
   depends_on "webp"
   depends_on "x265"
-  depends_on "xz"
   depends_on "python@3.8"
+  depends_on "xz"
 
   uses_from_macos "icu4c"
   uses_from_macos "libffi"
