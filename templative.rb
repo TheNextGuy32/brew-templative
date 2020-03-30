@@ -6,8 +6,6 @@ class Templative < Formula
   url "https://github.com/TheNextGuy32/templative/archive/0.1.0.tar.gz"
   sha256 "b00270058687cbf3939528efd36026103b12f505f5a69e97556d3fa99419c939"
 
-  depends_on "python@3.8"
-
   depends_on "cairo"
   depends_on "fontconfig"
   depends_on "freetype"
@@ -39,6 +37,7 @@ class Templative < Formula
   depends_on "webp"
   depends_on "x265"
   depends_on "xz"
+  depends_on "python@3.8"
 
   uses_from_macos "icu4c"
   uses_from_macos "libffi"
@@ -294,6 +293,6 @@ class Templative < Formula
   end
 
   test do
-    
+
   end
 end
