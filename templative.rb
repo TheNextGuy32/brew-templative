@@ -35,8 +35,8 @@ class Templative < Formula
   depends_on "readline"
   depends_on "shared-mime-info"
   depends_on "webp"
-  depends_on "x265"
   depends_on "python@3.8"
+  depends_on "x265"
   depends_on "xz"
 
   uses_from_macos "icu4c"
@@ -173,10 +173,10 @@ class Templative < Formula
     sha256 "7ff88e00b396c02c8e1ecd8d176cfa418fb01fe81234dcea77803e7ce4f05dbe"
   end
 
-  resource "md2pdf" do
-    url "https://files.pythonhosted.org/packages/5c/a0/576df7a2d0daca3e7733cb1c43f4d6c2a8b2a722a497d9a73d10914bf21e/md2pdf-0.4.tar.gz"
-    sha256 "8bbe13f41a750542beba81fd1a2d79f61c5a4a8fb1519ff44e5b21d93590779d"
-  end
+  # resource "md2pdf" do
+  #   url "https://files.pythonhosted.org/packages/5c/a0/576df7a2d0daca3e7733cb1c43f4d6c2a8b2a722a497d9a73d10914bf21e/md2pdf-0.4.tar.gz"
+  #   sha256 "8bbe13f41a750542beba81fd1a2d79f61c5a4a8fb1519ff44e5b21d93590779d"
+  # end
 
   resource "mpmath" do
     url "https://files.pythonhosted.org/packages/ca/63/3384ebb3b51af9610086b23ea976e6d27d6d97bf140a76a365bd77a3eb32/mpmath-1.1.0.tar.gz"
