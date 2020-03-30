@@ -3,8 +3,9 @@ class Templative < Formula
 
   desc "Automate card sheet -> TCG"
   homepage "https://github.com/TheNextGuy32/templative"
-  url "https://github.com/TheNextGuy32/templative/tarball/HEAD"
+  url "https://github.com/TheNextGuy32/templative/archive/0.2.0.tar.gz"
   sha256 "b00270058687cbf3939528efd36026103b12f505f5a69e97556d3fa99419c939"
+  head "https://github.com/TheNextGuy32/templative.git"
 
   # depends_on "cairo"
   # depends_on "fontconfig"
@@ -289,10 +290,12 @@ class Templative < Formula
   # end
 
   def install
+    # xy = Language::Python.major_minor_version "python3"
+    # system "python3", *Language::Python.setup_install_args(libexec)
     virtualenv_install_with_resources(:using => "python@3.8")
   end
 
   test do
-
+    system "#{bin}/cli", "--help"
   end
 end
