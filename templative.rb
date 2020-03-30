@@ -4,7 +4,7 @@ class Templative < Formula
   desc "Automate card sheet -> TCG"
   homepage "https://github.com/TheNextGuy32/templative"
   url "https://github.com/TheNextGuy32/templative/archive/0.2.0.tar.gz"
-  sha256 "b00270058687cbf3939528efd36026103b12f505f5a69e97556d3fa99419c939"
+  sha256 "d763fbe844b7f731265dd43703373407aeb00c3e59dfb75b8e98ff9a8acdcb6d"
   head "https://github.com/TheNextGuy32/templative.git"
 
   # depends_on "cairo"
