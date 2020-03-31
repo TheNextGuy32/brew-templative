@@ -37,7 +37,7 @@ class Templative < Formula
   depends_on "shared-mime-info"
   depends_on "sqlite"
   depends_on "webp"
-  depends_on "python@3.7"
+  depends_on "python@3"
   depends_on "x265"
   depends_on "xz"
 
