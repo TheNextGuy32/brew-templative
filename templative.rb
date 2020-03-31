@@ -9,6 +9,7 @@ class Templative < Formula
 
   depends_on "cairo"
   depends_on "fontconfig"
+  depends_on "imagemagick"
   depends_on "freetype"
   depends_on "fribidi"
   depends_on "gdbm"
@@ -27,7 +28,7 @@ class Templative < Formula
   depends_on "little-cms2"
   depends_on "lzo"
   depends_on "openexr"
-  depends_on "imagemagick"
+  
   depends_on "openjpeg"
   depends_on "openssl@1.1"
   depends_on "pcre"
@@ -153,15 +154,15 @@ class Templative < Formula
   #   sha256 "8620ce80f50d023d414183bf90cc2576c2837b88e00bea3f33ad2630133bbb60"
   # end
 
-  resource "markdown2" do
-    url "https://files.pythonhosted.org/packages/e3/93/d37055743009d1a492b2670cc215831a388b3d6e4a28b7672fdf0f7854f5/markdown2-2.3.8.tar.gz"
-    sha256 "7ff88e00b396c02c8e1ecd8d176cfa418fb01fe81234dcea77803e7ce4f05dbe"
-  end
+  # resource "markdown2" do
+  #   url "https://files.pythonhosted.org/packages/e3/93/d37055743009d1a492b2670cc215831a388b3d6e4a28b7672fdf0f7854f5/markdown2-2.3.8.tar.gz"
+  #   sha256 "7ff88e00b396c02c8e1ecd8d176cfa418fb01fe81234dcea77803e7ce4f05dbe"
+  # end
 
-  resource "md2pdf" do
-    url "https://files.pythonhosted.org/packages/5c/a0/576df7a2d0daca3e7733cb1c43f4d6c2a8b2a722a497d9a73d10914bf21e/md2pdf-0.4.tar.gz"
-    sha256 "8bbe13f41a750542beba81fd1a2d79f61c5a4a8fb1519ff44e5b21d93590779d"
-  end
+  # resource "md2pdf" do
+  #   url "https://files.pythonhosted.org/packages/5c/a0/576df7a2d0daca3e7733cb1c43f4d6c2a8b2a722a497d9a73d10914bf21e/md2pdf-0.4.tar.gz"
+  #   sha256 "8bbe13f41a750542beba81fd1a2d79f61c5a4a8fb1519ff44e5b21d93590779d"
+  # end
 
   resource "mpmath" do
     url "https://files.pythonhosted.org/packages/ca/63/3384ebb3b51af9610086b23ea976e6d27d6d97bf140a76a365bd77a3eb32/mpmath-1.1.0.tar.gz"
