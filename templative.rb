@@ -10,18 +10,15 @@ class Templative < Formula
   depends_on "cairo"
   depends_on "fontconfig"
   depends_on "freetype"
-  
   depends_on "fribidi"
   depends_on "gdbm"
   depends_on "gettext"
   depends_on "glib"
   depends_on "graphite2"
   depends_on "harfbuzz"
-  
   depends_on "ilmbase"
   depends_on "jpeg"
   depends_on "libde265"
-  
   depends_on "libheif"
   depends_on "libomp"
   depends_on "libpng"
@@ -36,14 +33,14 @@ class Templative < Formula
   depends_on "pixman"
   depends_on "readline"
   depends_on "shared-mime-info"
-  depends_on "webp"
   depends_on "python"
   depends_on "imagemagick"
+  depends_on "webp"
   depends_on "x265"
   depends_on "xz"
 
-  uses_from_macos "libffi"
   uses_from_macos "icu4c"
+  uses_from_macos "libffi"
   uses_from_macos "sqlite"
 
   # resource "aiofile" do
