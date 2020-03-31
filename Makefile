@@ -1,13 +1,7 @@
-refresh: clear
-	brew tap thenextguy32/homebrew-templative
-	brew install templative
+
 
 audit:
 	brew audit --new-formula templative
-
-clear:
-	sudo rm '/usr/local/bin/templative'
-	brew uninstall templative
 
 upload: 
 	git add .
@@ -20,10 +14,16 @@ upload:
 release: clear upload
 
 install:
+	brew tap thenextguy32/homebrew-templative
 	brew install templative
 
+clear:
+	sudo rm '/usr/local/bin/templative'
+	brew uninstall templative
+
+refresh: clear install
+
 sniff: 
-	pipenv --rm
 	pipenv install $(package)
 	pipenv run pip show $(package)
 	pipenv --rm 
