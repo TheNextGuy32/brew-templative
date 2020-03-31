@@ -31,9 +31,9 @@ class Templative < Formula
   depends_on "openssl@1.1"
   depends_on "pcre"
   depends_on "pixman"
-  depends_on "readline"
   depends_on "python"
   depends_on "imagemagick"
+  depends_on "readline"
   depends_on "shared-mime-info"
   depends_on "webp"
   depends_on "x265"
@@ -238,10 +238,10 @@ class Templative < Formula
   #   sha256 "b3e971973a4f03c1430e6b838b75b5b57630415fcae8666d2be1347630ff6d6a"
   # end
 
-  # resource "webencodings" do
-  #   url "https://files.pythonhosted.org/packages/0b/02/ae6ceac1baeda530866a85075641cec12989bd8d31af6d5ab4a3e8c92f47/webencodings-0.5.1.tar.gz"
-  #   sha256 "b36a1c245f2d304965eb4e0a82848379241dc04b865afcc4aab16748587e1923"
-  # end
+  resource "webencodings" do
+    url "https://files.pythonhosted.org/packages/0b/02/ae6ceac1baeda530866a85075641cec12989bd8d31af6d5ab4a3e8c92f47/webencodings-0.5.1.tar.gz"
+    sha256 "b36a1c245f2d304965eb4e0a82848379241dc04b865afcc4aab16748587e1923"
+  end
 
   resource "yarl" do
     url "https://files.pythonhosted.org/packages/d6/67/6e2507586eb1cfa6d55540845b0cd05b4b77c414f6bca8b00b45483b976e/yarl-1.4.2.tar.gz"
