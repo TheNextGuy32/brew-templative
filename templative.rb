@@ -7,42 +7,39 @@ class Templative < Formula
   sha256 "d763fbe844b7f731265dd43703373407aeb00c3e59dfb75b8e98ff9a8acdcb6d"
   head "https://github.com/TheNextGuy32/templative.git"
 
-  depends_on "cairo"
-  depends_on "fontconfig"
-  depends_on "freetype"
-  depends_on "fribidi"
-  depends_on "gdbm"
-  depends_on "gettext"
-  depends_on "glib"
-  depends_on "graphite2"
-  depends_on "harfbuzz"
-  depends_on "ilmbase"
-  depends_on "imagemagick"
-  depends_on "jpeg"
-  depends_on "libde265"
-  depends_on "libheif"
-  depends_on "libomp"
-  depends_on "libpng"
-  depends_on "libtiff"
-  depends_on "libtool"
-  depends_on "little-cms2"
-  depends_on "lzo"
-  depends_on "openexr"
-  depends_on "openjpeg"
-  depends_on "openssl@1.1"
-  depends_on "pango"
-  depends_on "pcre"
-  depends_on "pixman"
-  depends_on "readline"
-  depends_on "shared-mime-info"
-  depends_on "webp"
-  depends_on "python@3.8"
-  depends_on "x265"
-  # depends_on "xz"
-
-  uses_from_macos "icu4c"
-  uses_from_macos "libffi"
-  uses_from_macos "sqlite"
+  depends on "cairo"
+  depends on "fontconfig"
+  depends on "freetype"
+  depends on "fribidi"
+  depends on "gdbm"
+  depends on "gettext"
+  depends on "glib"
+  depends on "graphite2"
+  depends on "harfbuzz"
+  depends on "icu4c"
+  depends on "ilmbase"
+  depends on "jpeg"
+  depends on "libde265"
+  depends on "libffi"
+  depends on "libheif"
+  depends on "libomp"
+  depends on "libpng"
+  depends on "libtiff"
+  depends on "libtool"
+  depends on "little-cms2"
+  depends on "lzo"
+  depends on "openexr"
+  depends on "openjpeg"
+  depends on "openssl@1.1"
+  depends on "pcre"
+  depends on "pixman"
+  depends on "readline"
+  depends on "shared-mime-info"
+  depends on "sqlite"
+  depends on "webp"
+  depends on "python@3.7"
+  depends on "x265"
+  depends on "xz"
 
   resource "aiofile" do
     url "https://files.pythonhosted.org/packages/71/7c/d6df3b2c8fb380ef7f678c366dc4485dfeb389967d373b1dc5d53bd1dcf0/aiofile-1.5.2.tar.gz"
@@ -52,11 +49,6 @@ class Templative < Formula
   resource "aiohttp" do
     url "https://files.pythonhosted.org/packages/00/94/f9fa18e8d7124d7850a5715a0b9c0584f7b9375d331d35e157cee50f27cc/aiohttp-3.6.2.tar.gz"
     sha256 "259ab809ff0727d0e834ac5e8a283dc5e3e0ecc30c4d80b3cd17a4139ce1f326"
-  end
-
-  resource "appdirs" do
-    url "https://files.pythonhosted.org/packages/48/69/d87c60746b393309ca30761f8e2b49473d43450b150cb08f3c6df5c11be5/appdirs-1.4.3.tar.gz"
-    sha256 "9e5896d1372858f8dd3344faf4e5014d21849c756c8d5701f78f8a103b372d92"
   end
 
   resource "async-timeout" do
@@ -109,11 +101,6 @@ class Templative < Formula
     sha256 "f684034d135af4c6cbb949b8a4d2ed61634515257a67299e5f940fbaa34377f5"
   end
 
-  resource "distlib" do
-    url "https://files.pythonhosted.org/packages/7d/29/694a3a4d7c0e1aef76092e9167fbe372e0f7da055f5dcf4e1313ec21d96a/distlib-0.3.0.zip"
-    sha256 "2e166e231a26b36d6dfe35a48c4464346620f8645ed0ace01ee31822b288de21"
-  end
-
   resource "docopt" do
     url "https://files.pythonhosted.org/packages/a2/55/8f8cab2afd404cf578136ef2cc5dfb50baa1761b68c9da1fb1e4eed343c9/docopt-0.6.2.tar.gz"
     sha256 "49b3a825280bd66b3aa83585ef59c4a8c82f2c8a522dbe754a8bc8d08c85c491"
@@ -122,11 +109,6 @@ class Templative < Formula
   resource "ensure" do
     url "https://files.pythonhosted.org/packages/05/26/1a6cb222c7c784a4ce06214513ae69126f423acd7898ff62d1787b3978f1/ensure-1.0.0.tar.gz"
     sha256 "61ef7a640914c317ab18026f05618d84004465614c1854264b3c63b2c81a64e7"
-  end
-
-  resource "filelock" do
-    url "https://files.pythonhosted.org/packages/14/ec/6ee2168387ce0154632f856d5cc5592328e9cf93127c5c9aeca92c8c16cb/filelock-3.0.12.tar.gz"
-    sha256 "18d82244ee114f543149c66a6e0c14e9c4f8a1044b5cdaadd0f82159d6a6ff59"
   end
 
   resource "h11" do
@@ -189,11 +171,6 @@ class Templative < Formula
     sha256 "aee283c49601fa4c13adc64c09c978838a7e812f85377ae130a24d7198c0331e"
   end
 
-  resource "pbr" do
-    url "https://files.pythonhosted.org/packages/98/8a/defa5215d2dcf98cc80f4783e951a8356e38f352f7a169ae11670dcb1f25/pbr-5.4.4.tar.gz"
-    sha256 "139d2625547dbfa5fb0b81daebb39601c478c21956dc57e2e07b74450a8c506b"
-  end
-
   resource "Pillow" do
     url "https://files.pythonhosted.org/packages/39/47/f28067b187dd664d205f75b07dcc6e0e95703e134008a14814827eebcaab/Pillow-7.0.0.tar.gz"
     sha256 "4d9ed9a64095e031435af120d3c910148067087541131e82b3e8db302f4c8946"
@@ -229,11 +206,6 @@ class Templative < Formula
     sha256 "236bdbdce46e6e6a3d61a337c0f8b763ca1e8717c03b369e87a7ec7ce1319c0a"
   end
 
-  resource "stevedore" do
-    url "https://files.pythonhosted.org/packages/be/19/83fd12828f879f53b85fe820925776aecda710944279e47a2dac53444adc/stevedore-1.32.0.tar.gz"
-    sha256 "18afaf1d623af5950cc0f7e75e70f917784c73b652a34a12d90b309451b5500b"
-  end
-
   resource "svgutils" do
     url "https://files.pythonhosted.org/packages/8c/35/21e59c17e0d435b953b0c1a8ffd914f4bf3411b52ae04030c0c4153ef929/svgutils-0.3.1.tar.gz"
     sha256 "cd52474765fd460ad2389947f77589de96142f6f0ce3f61e08ccfabeac2ff8af"
@@ -252,21 +224,6 @@ class Templative < Formula
   resource "urllib3" do
     url "https://files.pythonhosted.org/packages/09/06/3bc5b100fe7e878d3dee8f807a4febff1a40c213d2783e3246edde1f3419/urllib3-1.25.8.tar.gz"
     sha256 "87716c2d2a7121198ebcb7ce7cccf6ce5e9ba539041cfbaeecfb641dc0bf6acc"
-  end
-
-  resource "virtualenv" do
-    url "https://files.pythonhosted.org/packages/98/30/13ec6895dd1e2aaef956cc587e19c88fca00b2be52bb29cc4b09995aded5/virtualenv-20.0.15.tar.gz"
-    sha256 "9e81279f4a9d16d1c0654a127c2c86e5bca2073585341691882c1e66e31ef8a5"
-  end
-
-  resource "virtualenv-clone" do
-    url "https://files.pythonhosted.org/packages/1d/51/076f3a72af6c874e560be8a6145d6ea5be70387f21e65d42ddd771cbd93a/virtualenv-clone-0.5.4.tar.gz"
-    sha256 "665e48dd54c84b98b71a657acb49104c54e7652bce9c1c4f6c6976ed4c827a29"
-  end
-
-  resource "virtualenvwrapper" do
-    url "https://files.pythonhosted.org/packages/c1/6b/2f05d73b2d2f2410b48b90d3783a0034c26afa534a4a95ad5f1178d61191/virtualenvwrapper-4.8.4.tar.gz"
-    sha256 "51a1a934e7ed0ff221bdd91bf9d3b604d875afbb3aa2367133503fee168f5bfa"
   end
 
   resource "Wand" do
@@ -290,9 +247,7 @@ class Templative < Formula
   end
 
   def install
-    # xy = Language::Python.major_minor_version "python3"
-    # system "python3", *Language::Python.setup_install_args(libexec)
-    virtualenv_install_with_resources(:using => "python@3.8")
+    virtualenv_install_with_resources(:using => "python@3.7")
   end
 
   test do
