@@ -10,18 +10,18 @@ class Templative < Formula
   depends_on "cairo"
   depends_on "fontconfig"
   depends_on "freetype"
-  depends_on "imagemagick"
+  
   depends_on "fribidi"
   depends_on "gdbm"
   depends_on "gettext"
   depends_on "glib"
   depends_on "graphite2"
   depends_on "harfbuzz"
-  depends_on "icu4c"
+  
   depends_on "ilmbase"
   depends_on "jpeg"
   depends_on "libde265"
-  depends_on "libffi"
+  
   depends_on "libheif"
   depends_on "libomp"
   depends_on "libpng"
@@ -36,11 +36,15 @@ class Templative < Formula
   depends_on "pixman"
   depends_on "readline"
   depends_on "shared-mime-info"
-  depends_on "sqlite"
   depends_on "webp"
   depends_on "python"
+  depends_on "imagemagick"
   depends_on "x265"
   depends_on "xz"
+
+  uses_from_macos "libffi"
+  uses_from_macos "icu4c"
+  uses_from_macos "sqlite"
 
   # resource "aiofile" do
   #   url "https://files.pythonhosted.org/packages/71/7c/d6df3b2c8fb380ef7f678c366dc4485dfeb389967d373b1dc5d53bd1dcf0/aiofile-1.5.2.tar.gz"
