@@ -19,10 +19,13 @@ upload:
 
 release: clear upload
 
+install:
+	brew install templative
+
 sniff: 
 	pipenv --rm
 	pipenv install $(package)
-	pipenv run pip show
+	pipenv run pip show $(package)
 	pipenv --rm 
 	rm Pipfile
 	rm Pipfile.lock
