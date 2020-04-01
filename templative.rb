@@ -1,19 +1,17 @@
 class Templative < Formula
   include Language::Python::Virtualenv
-
   # https://stackoverflow.com/questions/34631806/fail-during-installation-of-pillow-python-module-in-linux/34631976#34631976
   # https://github.com/python-pillow/Pillow/issues/3438
   # https://github.com/python-pillow/Pillow/issues/3959
   # https://akrabat.com/installing-pillow-on-macos-10-15-calatalina/
   # https://medium.com/@mohammedhammoud/install-pillow-on-mac-os-x-de2d3d0b3975
-  
-
   desc "Automate card sheet -> TCG"
   homepage "https://github.com/TheNextGuy32/templative"
   url "https://github.com/TheNextGuy32/templative/archive/0.2.0.tar.gz"
   sha256 "d763fbe844b7f731265dd43703373407aeb00c3e59dfb75b8e98ff9a8acdcb6d"
   head "https://github.com/TheNextGuy32/templative.git"
 
+  depends_on "librsvg"
   depends_on "cairo"
   depends_on "fontconfig"
   depends_on "freetype"
@@ -36,7 +34,6 @@ class Templative < Formula
   depends_on "little-cms2"
   depends_on "lzo"
   depends_on "openexr"
-  depends_on "librsvg"
   depends_on "openjpeg"
   depends_on "openssl@1.1"
   depends_on "pcre"
