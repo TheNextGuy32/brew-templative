@@ -11,7 +11,7 @@ class Templative < Formula
   sha256 "d763fbe844b7f731265dd43703373407aeb00c3e59dfb75b8e98ff9a8acdcb6d"
   head "https://github.com/TheNextGuy32/templative.git"
 
-  depends_on "librsvg"
+ 
   depends_on "cairo"
   depends_on "fontconfig"
   depends_on "freetype"
@@ -26,9 +26,9 @@ class Templative < Formula
   depends_on "jpeg"
   depends_on "libde265"
   depends_on "libheif"
-  depends_on "libjpeg"
   depends_on "libomp"
   depends_on "libpng"
+  depends_on "librsvg"
   depends_on "libtiff"
   depends_on "libtool"
   depends_on "little-cms2"
@@ -44,7 +44,6 @@ class Templative < Formula
   depends_on "webp"
   depends_on "x265"
   depends_on "xz"
-  depends_on "zlib"
 
   uses_from_macos "icu4c"
   uses_from_macos "libffi"
