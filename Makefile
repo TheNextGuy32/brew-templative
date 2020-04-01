@@ -21,7 +21,7 @@ logs:
 	cp /Users/oliverbarnum/Library/Logs/Homebrew/templative/26.pip log
 
 clear:
-	sudo rm '/usr/local/bin/templative'
+	# sudo rm '/usr/local/bin/templative'
 	brew uninstall templative
 
 refresh: clear install

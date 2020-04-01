@@ -2,8 +2,8 @@ class Templative < Formula
   include Language::Python::Virtualenv
   desc "Automate card sheet -> TCG"
   homepage "https://github.com/TheNextGuy32/templative"
-  url "https://github.com/TheNextGuy32/templative/archive/0.2.0.tar.gz"
-  sha256 "d763fbe844b7f731265dd43703373407aeb00c3e59dfb75b8e98ff9a8acdcb6d"
+  url "https://github.com/TheNextGuy32/templative/archive/0.2.1.tar.gz"
+  sha256 "0b1196f466a55d254ce512f9d61e9c55a99e63c22f65bc1c539ef008fb9d9f97"
   head "https://github.com/TheNextGuy32/templative.git"
 
   depends_on "cairo"
@@ -295,11 +295,6 @@ class Templative < Formula
   resource "markdown2" do
     url "https://files.pythonhosted.org/packages/e3/93/d37055743009d1a492b2670cc215831a388b3d6e4a28b7672fdf0f7854f5/markdown2-2.3.8.tar.gz"
     sha256 "7ff88e00b396c02c8e1ecd8d176cfa418fb01fe81234dcea77803e7ce4f05dbe"
-  end
-
-  resource "md2pdf" do
-    url "https://files.pythonhosted.org/packages/5c/a0/576df7a2d0daca3e7733cb1c43f4d6c2a8b2a722a497d9a73d10914bf21e/md2pdf-0.4.tar.gz"
-    sha256 "8bbe13f41a750542beba81fd1a2d79f61c5a4a8fb1519ff44e5b21d93590779d"
   end
 
   def install

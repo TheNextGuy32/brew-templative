@@ -1,4 +1,4 @@
-2020-04-01 00:56:38 -0700
+2020-04-01 01:54:19 -0700
 
 /usr/local/Cellar/templative/0.2.0/libexec/bin/pip
 install
@@ -7,254 +7,61 @@ install
 --no-binary
 :all:
 --ignore-installed
-/private/tmp/templative--Pillow-20200401-21715-1mmil0q/Pillow-7.0.0
+/private/tmp/templative--md2pdf-20200401-48139-1u9dkxo/md2pdf-0.4
 
 Non-user install because user site-packages disabled
-Created temporary directory: /private/tmp/pip-ephem-wheel-cache-36b1mahz
-Created temporary directory: /private/tmp/pip-req-tracker-j4gglhgu
-Initialized build tracking at /private/tmp/pip-req-tracker-j4gglhgu
-Created build tracker: /private/tmp/pip-req-tracker-j4gglhgu
-Entered build tracker: /private/tmp/pip-req-tracker-j4gglhgu
-Created temporary directory: /private/tmp/pip-install-a9vt09ln
-Processing /private/tmp/templative--Pillow-20200401-21715-1mmil0q/Pillow-7.0.0
-  Created temporary directory: /private/tmp/pip-req-build-cywsyx46
-  Added file:///private/tmp/templative--Pillow-20200401-21715-1mmil0q/Pillow-7.0.0 to build tracker '/private/tmp/pip-req-tracker-j4gglhgu'
-    Running setup.py (path:/private/tmp/pip-req-build-cywsyx46/setup.py) egg_info for package from file:///private/tmp/templative--Pillow-20200401-21715-1mmil0q/Pillow-7.0.0
+Created temporary directory: /private/tmp/pip-ephem-wheel-cache-ucedkvs1
+Created temporary directory: /private/tmp/pip-req-tracker-7qjt115d
+Initialized build tracking at /private/tmp/pip-req-tracker-7qjt115d
+Created build tracker: /private/tmp/pip-req-tracker-7qjt115d
+Entered build tracker: /private/tmp/pip-req-tracker-7qjt115d
+Created temporary directory: /private/tmp/pip-install-xb5221tf
+Processing /private/tmp/templative--md2pdf-20200401-48139-1u9dkxo/md2pdf-0.4
+  Created temporary directory: /private/tmp/pip-req-build-8n6cm_dl
+  Added file:///private/tmp/templative--md2pdf-20200401-48139-1u9dkxo/md2pdf-0.4 to build tracker '/private/tmp/pip-req-tracker-7qjt115d'
+    Running setup.py (path:/private/tmp/pip-req-build-8n6cm_dl/setup.py) egg_info for package from file:///private/tmp/templative--md2pdf-20200401-48139-1u9dkxo/md2pdf-0.4
     Running command python setup.py egg_info
-    running egg_info
-    creating /private/tmp/pip-req-build-cywsyx46/pip-egg-info/Pillow.egg-info
-    writing /private/tmp/pip-req-build-cywsyx46/pip-egg-info/Pillow.egg-info/PKG-INFO
-    writing dependency_links to /private/tmp/pip-req-build-cywsyx46/pip-egg-info/Pillow.egg-info/dependency_links.txt
-    writing top-level names to /private/tmp/pip-req-build-cywsyx46/pip-egg-info/Pillow.egg-info/top_level.txt
-    writing manifest file '/private/tmp/pip-req-build-cywsyx46/pip-egg-info/Pillow.egg-info/SOURCES.txt'
-    reading manifest file '/private/tmp/pip-req-build-cywsyx46/pip-egg-info/Pillow.egg-info/SOURCES.txt'
-    reading manifest template 'MANIFEST.in'
-    warning: no files found matching '*.c'
-    warning: no files found matching '*.h'
-    warning: no files found matching '*.sh'
-    warning: no previously-included files found matching '.appveyor.yml'
-    warning: no previously-included files found matching '.coveragerc'
-    warning: no previously-included files found matching '.codecov.yml'
-    warning: no previously-included files found matching '.editorconfig'
-    warning: no previously-included files found matching '.readthedocs.yml'
-    warning: no previously-included files found matching 'azure-pipelines.yml'
-    warning: no previously-included files matching '.git*' found anywhere in distribution
-    warning: no previously-included files matching '*.pyc' found anywhere in distribution
-    warning: no previously-included files matching '*.so' found anywhere in distribution
-    no previously-included directories found matching '.azure-pipelines'
-    no previously-included directories found matching '.travis'
-    writing manifest file '/private/tmp/pip-req-build-cywsyx46/pip-egg-info/Pillow.egg-info/SOURCES.txt'
-  Source in /private/tmp/pip-req-build-cywsyx46 has version 7.0.0, which satisfies requirement Pillow==7.0.0 from file:///private/tmp/templative--Pillow-20200401-21715-1mmil0q/Pillow-7.0.0
-  Removed Pillow==7.0.0 from file:///private/tmp/templative--Pillow-20200401-21715-1mmil0q/Pillow-7.0.0 from build tracker '/private/tmp/pip-req-tracker-j4gglhgu'
-Skipping wheel build for Pillow, due to binaries being disabled for it.
-Installing collected packages: Pillow
-  Created temporary directory: /private/tmp/pip-record-73k4pzlq
-    Running setup.py install for Pillow: started
-    Running command /usr/local/Cellar/templative/0.2.0/libexec/bin/python3.7 -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/private/tmp/pip-req-build-cywsyx46/setup.py'"'"'; __file__='"'"'/private/tmp/pip-req-build-cywsyx46/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record /private/tmp/pip-record-73k4pzlq/install-record.txt --single-version-externally-managed --compile --install-headers /usr/local/Cellar/templative/0.2.0/libexec/bin/../include/site/python3.7/Pillow
-    running install
-    running build
-    running build_py
-    creating build
-    creating build/lib.macosx-10.13-x86_64-3.7
-    creating build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/MpoImagePlugin.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/ImageMode.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/PngImagePlugin.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/XbmImagePlugin.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/PcxImagePlugin.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/SunImagePlugin.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/ImageFile.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/SpiderImagePlugin.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/TarIO.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/FitsStubImagePlugin.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/MpegImagePlugin.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/BdfFontFile.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/GribStubImagePlugin.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/ImageStat.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/PixarImagePlugin.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/GimpPaletteFile.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/ImageColor.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/ContainerIO.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/MspImagePlugin.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/MicImagePlugin.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/_version.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/ImtImagePlugin.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/GifImagePlugin.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/PalmImagePlugin.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/ImageQt.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/ImageMath.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/PaletteFile.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/FontFile.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/PdfParser.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/ExifTags.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/ImageCms.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/FpxImagePlugin.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/ImageChops.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/BufrStubImagePlugin.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/PSDraw.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/PcdImagePlugin.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/ImageFilter.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/ImageDraw2.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/ImagePath.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/DcxImagePlugin.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/__init__.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/JpegPresets.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/Hdf5StubImagePlugin.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/features.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/ImageDraw.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/GimpGradientFile.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/ImageWin.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/IcoImagePlugin.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/_tkinter_finder.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/EpsImagePlugin.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/TgaImagePlugin.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/ImageMorph.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/Jpeg2KImagePlugin.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/WalImageFile.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/PcfFontFile.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/BlpImagePlugin.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/ImageTk.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/GbrImagePlugin.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/ImageOps.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/PdfImagePlugin.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/ImageShow.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/ImageEnhance.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/WmfImagePlugin.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/ImageGrab.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/WebPImagePlugin.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/FliImagePlugin.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/TiffTags.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/CurImagePlugin.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/_util.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/GdImageFile.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/TiffImagePlugin.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/IptcImagePlugin.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/ImagePalette.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/BmpImagePlugin.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/ImageTransform.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/IcnsImagePlugin.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/McIdasImagePlugin.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/XpmImagePlugin.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/DdsImagePlugin.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/ImageSequence.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/PyAccess.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/_binary.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/Image.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/__main__.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/XVThumbImagePlugin.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/SgiImagePlugin.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/ImImagePlugin.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/PsdImagePlugin.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/JpegImagePlugin.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/ImageFont.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/PpmImagePlugin.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    copying src/PIL/FtexImagePlugin.py -> build/lib.macosx-10.13-x86_64-3.7/PIL
-    running egg_info
-    writing src/Pillow.egg-info/PKG-INFO
-    writing dependency_links to src/Pillow.egg-info/dependency_links.txt
-    writing top-level names to src/Pillow.egg-info/top_level.txt
-    reading manifest file 'src/Pillow.egg-info/SOURCES.txt'
-    reading manifest template 'MANIFEST.in'
-    warning: no files found matching '*.c'
-    warning: no files found matching '*.h'
-    warning: no files found matching '*.sh'
-    warning: no previously-included files found matching '.appveyor.yml'
-    warning: no previously-included files found matching '.coveragerc'
-    warning: no previously-included files found matching '.codecov.yml'
-    warning: no previously-included files found matching '.editorconfig'
-    warning: no previously-included files found matching '.readthedocs.yml'
-    warning: no previously-included files found matching 'azure-pipelines.yml'
-    warning: no previously-included files matching '.git*' found anywhere in distribution
-    warning: no previously-included files matching '*.pyc' found anywhere in distribution
-    warning: no previously-included files matching '*.so' found anywhere in distribution
-    no previously-included directories found matching '.azure-pipelines'
-    no previously-included directories found matching '.travis'
-    writing manifest file 'src/Pillow.egg-info/SOURCES.txt'
-    running build_ext
-
-
-    The headers or library files could not be found for zlib,
-    a required dependency when compiling Pillow from source.
-
-    Please see the install instructions at:
-       https://pillow.readthedocs.io/en/latest/installation.html
-
-    Traceback (most recent call last):
-      File "/private/tmp/pip-req-build-cywsyx46/setup.py", line 892, in <module>
-        zip_safe=not (debug_build() or PLATFORM_MINGW),
-      File "/usr/local/Cellar/templative/0.2.0/libexec/lib/python3.7/site-packages/setuptools/__init__.py", line 144, in setup
-        return distutils.core.setup(**attrs)
-      File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/distutils/core.py", line 148, in setup
-        dist.run_commands()
-      File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/distutils/dist.py", line 966, in run_commands
-        self.run_command(cmd)
-      File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/distutils/dist.py", line 985, in run_command
-        cmd_obj.run()
-      File "/usr/local/Cellar/templative/0.2.0/libexec/lib/python3.7/site-packages/setuptools/command/install.py", line 61, in run
-        return orig.install.run(self)
-      File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/distutils/command/install.py", line 545, in run
-        self.run_command('build')
-      File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/distutils/cmd.py", line 313, in run_command
-        self.distribution.run_command(command)
-      File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/distutils/dist.py", line 985, in run_command
-        cmd_obj.run()
-      File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/distutils/command/build.py", line 135, in run
-        self.run_command(cmd_name)
-      File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/distutils/cmd.py", line 313, in run_command
-        self.distribution.run_command(command)
-      File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/distutils/dist.py", line 985, in run_command
-        cmd_obj.run()
-      File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/distutils/command/build_ext.py", line 340, in run
-        self.build_extensions()
-      File "/private/tmp/pip-req-build-cywsyx46/setup.py", line 687, in build_extensions
-        raise RequiredDependencyException(f)
-    __main__.RequiredDependencyException: zlib
-
-    During handling of the above exception, another exception occurred:
-
-    Traceback (most recent call last):
-      File "<string>", line 1, in <module>
-      File "/private/tmp/pip-req-build-cywsyx46/setup.py", line 907, in <module>
-        raise RequiredDependencyException(msg)
-    __main__.RequiredDependencyException:
-
-    The headers or library files could not be found for zlib,
-    a required dependency when compiling Pillow from source.
-
-    Please see the install instructions at:
-       https://pillow.readthedocs.io/en/latest/installation.html
-
-
-    Running setup.py install for Pillow: finished with status 'error'
+    error in md2pdf setup command: 'install_requires' must be a string or list of strings containing valid project/version requirement specifiers; Unordered types are not allowed
 Cleaning up...
-  Removing source in /private/tmp/pip-req-build-cywsyx46
-Removed build tracker: '/private/tmp/pip-req-tracker-j4gglhgu'
-ERROR: Command errored out with exit status 1: /usr/local/Cellar/templative/0.2.0/libexec/bin/python3.7 -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/private/tmp/pip-req-build-cywsyx46/setup.py'"'"'; __file__='"'"'/private/tmp/pip-req-build-cywsyx46/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record /private/tmp/pip-record-73k4pzlq/install-record.txt --single-version-externally-managed --compile --install-headers /usr/local/Cellar/templative/0.2.0/libexec/bin/../include/site/python3.7/Pillow Check the logs for full command output.
+  Removing source in /private/tmp/pip-req-build-8n6cm_dl
+Removed file:///private/tmp/templative--md2pdf-20200401-48139-1u9dkxo/md2pdf-0.4 from build tracker '/private/tmp/pip-req-tracker-7qjt115d'
+Removed build tracker: '/private/tmp/pip-req-tracker-7qjt115d'
+ERROR: Command errored out with exit status 1: python setup.py egg_info Check the logs for full command output.
 Exception information:
 Traceback (most recent call last):
   File "/usr/local/Cellar/templative/0.2.0/libexec/lib/python3.7/site-packages/pip/_internal/cli/base_command.py", line 186, in _main
     status = self.run(options, args)
-  File "/usr/local/Cellar/templative/0.2.0/libexec/lib/python3.7/site-packages/pip/_internal/commands/install.py", line 404, in run
-    use_user_site=options.use_user_site,
-  File "/usr/local/Cellar/templative/0.2.0/libexec/lib/python3.7/site-packages/pip/_internal/req/__init__.py", line 71, in install_given_reqs
-    **kwargs
-  File "/usr/local/Cellar/templative/0.2.0/libexec/lib/python3.7/site-packages/pip/_internal/req/req_install.py", line 829, in install
-    scheme=scheme,
-  File "/usr/local/Cellar/templative/0.2.0/libexec/lib/python3.7/site-packages/pip/_internal/operations/install/legacy.py", line 72, in install
-    cwd=install_req.unpacked_source_directory,
-  File "/usr/local/Cellar/templative/0.2.0/libexec/lib/python3.7/site-packages/pip/_internal/utils/subprocess.py", line 275, in runner
-    spinner=spinner,
+  File "/usr/local/Cellar/templative/0.2.0/libexec/lib/python3.7/site-packages/pip/_internal/commands/install.py", line 331, in run
+    resolver.resolve(requirement_set)
+  File "/usr/local/Cellar/templative/0.2.0/libexec/lib/python3.7/site-packages/pip/_internal/legacy_resolve.py", line 177, in resolve
+    discovered_reqs.extend(self._resolve_one(requirement_set, req))
+  File "/usr/local/Cellar/templative/0.2.0/libexec/lib/python3.7/site-packages/pip/_internal/legacy_resolve.py", line 333, in _resolve_one
+    abstract_dist = self._get_abstract_dist_for(req_to_install)
+  File "/usr/local/Cellar/templative/0.2.0/libexec/lib/python3.7/site-packages/pip/_internal/legacy_resolve.py", line 282, in _get_abstract_dist_for
+    abstract_dist = self.preparer.prepare_linked_requirement(req)
+  File "/usr/local/Cellar/templative/0.2.0/libexec/lib/python3.7/site-packages/pip/_internal/operations/prepare.py", line 516, in prepare_linked_requirement
+    req, self.req_tracker, self.finder, self.build_isolation,
+  File "/usr/local/Cellar/templative/0.2.0/libexec/lib/python3.7/site-packages/pip/_internal/operations/prepare.py", line 95, in _get_prepared_distribution
+    abstract_dist.prepare_distribution_metadata(finder, build_isolation)
+  File "/usr/local/Cellar/templative/0.2.0/libexec/lib/python3.7/site-packages/pip/_internal/distributions/sdist.py", line 40, in prepare_distribution_metadata
+    self.req.prepare_metadata()
+  File "/usr/local/Cellar/templative/0.2.0/libexec/lib/python3.7/site-packages/pip/_internal/req/req_install.py", line 564, in prepare_metadata
+    self.metadata_directory = self._generate_metadata()
+  File "/usr/local/Cellar/templative/0.2.0/libexec/lib/python3.7/site-packages/pip/_internal/req/req_install.py", line 544, in _generate_metadata
+    details=self.name or "from {}".format(self.link)
+  File "/usr/local/Cellar/templative/0.2.0/libexec/lib/python3.7/site-packages/pip/_internal/operations/build/metadata_legacy.py", line 118, in generate_metadata
+    command_desc='python setup.py egg_info',
   File "/usr/local/Cellar/templative/0.2.0/libexec/lib/python3.7/site-packages/pip/_internal/utils/subprocess.py", line 242, in call_subprocess
     raise InstallationError(exc_msg)
-pip._internal.exceptions.InstallationError: Command errored out with exit status 1: /usr/local/Cellar/templative/0.2.0/libexec/bin/python3.7 -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/private/tmp/pip-req-build-cywsyx46/setup.py'"'"'; __file__='"'"'/private/tmp/pip-req-build-cywsyx46/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record /private/tmp/pip-record-73k4pzlq/install-record.txt --single-version-externally-managed --compile --install-headers /usr/local/Cellar/templative/0.2.0/libexec/bin/../include/site/python3.7/Pillow Check the logs for full command output.
+pip._internal.exceptions.InstallationError: Command errored out with exit status 1: python setup.py egg_info Check the logs for full command output.
 
 HOMEBREW_VERSION: 2.2.11-56-ged09857
 ORIGIN: https://github.com/Homebrew/brew.git
 HEAD: ed0985783aab8e9e8702a4aad27fbb4108f8c29a
-Last commit: 20 hours ago
+Last commit: 21 hours ago
 Core tap ORIGIN: https://github.com/Homebrew/homebrew-core
 Core tap HEAD: 89d93309ba2bc0e931d1ed4e6ee968a7a3af0b47
-Core tap last commit: 4 hours ago
+Core tap last commit: 5 hours ago
 HOMEBREW_PREFIX: /usr/local
 HOMEBREW_CACHE: /Users/oliverbarnum/Library/Caches/Homebrew
 HOMEBREW_LOGS: /Users/oliverbarnum/Library/Logs/Homebrew
@@ -276,9 +83,9 @@ CMAKE_PREFIX_PATH: /usr/local/opt/gettext:/usr/local/opt/libffi:/usr/local/opt/o
 CMAKE_INCLUDE_PATH: /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/usr/include/libxml2:/Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/Versions/Current/Headers
 CMAKE_LIBRARY_PATH: /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/Versions/Current/Libraries
 CMAKE_FRAMEWORK_PATH: /usr/local/opt/python/Frameworks
-PKG_CONFIG_PATH: /usr/local/opt/libpng/lib/pkgconfig:/usr/local/opt/freetype/lib/pkgconfig:/usr/local/opt/fontconfig/lib/pkgconfig:/usr/local/opt/libffi/lib/pkgconfig:/usr/local/opt/pcre/lib/pkgconfig:/usr/local/opt/openssl@1.1/lib/pkgconfig:/usr/local/opt/readline/lib/pkgconfig:/usr/local/opt/sqlite/lib/pkgconfig:/usr/local/opt/xz/lib/pkgconfig:/usr/local/opt/python/lib/pkgconfig:/usr/local/opt/glib/lib/pkgconfig:/usr/local/opt/lzo/lib/pkgconfig:/usr/local/opt/pixman/lib/pkgconfig:/usr/local/opt/cairo/lib/pkgconfig:/usr/local/opt/fribidi/lib/pkgconfig:/usr/local/opt/graphite2/lib/pkgconfig:/usr/local/opt/icu4c/lib/pkgconfig:/usr/local/opt/harfbuzz/lib/pkgconfig:/usr/local/opt/ilmbase/lib/pkgconfig:/usr/local/opt/jpeg/lib/pkgconfig:/usr/local/opt/libde265/lib/pkgconfig:/usr/local/opt/x265/lib/pkgconfig:/usr/local/opt/libheif/lib/pkgconfig:/usr/local/opt/libtiff/lib/pkgconfig:/usr/local/opt/little-cms2/lib/pkgconfig:/usr/local/opt/openexr/lib/pkgconfig:/usr/local/opt/openjpeg/lib/pkgconfig:/usr/local/opt/webp/lib/pkgconfig:/usr/local/opt/imagemagick/lib/pkgconfig:/usr/local/opt/gdk-pixbuf/lib/pkgconfig:/usr/local/opt/libcroco/lib/pkgconfig:/usr/local/opt/pango/lib/pkgconfig:/usr/local/opt/librsvg/lib/pkgconfig:/usr/local/opt/shared-mime-info/share/pkgconfig
+PKG_CONFIG_PATH: /usr/local/opt/libpng/lib/pkgconfig:/usr/local/opt/freetype/lib/pkgconfig:/usr/local/opt/fontconfig/lib/pkgconfig:/usr/local/opt/libffi/lib/pkgconfig:/usr/local/opt/pcre/lib/pkgconfig:/usr/local/opt/openssl@1.1/lib/pkgconfig:/usr/local/opt/readline/lib/pkgconfig:/usr/local/opt/sqlite/lib/pkgconfig:/usr/local/opt/xz/lib/pkgconfig:/usr/local/opt/python/lib/pkgconfig:/usr/local/opt/glib/lib/pkgconfig:/usr/local/opt/lzo/lib/pkgconfig:/usr/local/opt/pixman/lib/pkgconfig:/usr/local/opt/cairo/lib/pkgconfig:/usr/local/opt/fribidi/lib/pkgconfig:/usr/local/opt/graphite2/lib/pkgconfig:/usr/local/opt/icu4c/lib/pkgconfig:/usr/local/opt/harfbuzz/lib/pkgconfig:/usr/local/opt/pango/lib/pkgconfig:/usr/local/opt/ilmbase/lib/pkgconfig:/usr/local/opt/jpeg/lib/pkgconfig:/usr/local/opt/libde265/lib/pkgconfig:/usr/local/opt/x265/lib/pkgconfig:/usr/local/opt/libheif/lib/pkgconfig:/usr/local/opt/libtiff/lib/pkgconfig:/usr/local/opt/little-cms2/lib/pkgconfig:/usr/local/opt/openexr/lib/pkgconfig:/usr/local/opt/openjpeg/lib/pkgconfig:/usr/local/opt/webp/lib/pkgconfig:/usr/local/opt/imagemagick/lib/pkgconfig:/usr/local/opt/gdk-pixbuf/lib/pkgconfig:/usr/local/opt/libcroco/lib/pkgconfig:/usr/local/opt/librsvg/lib/pkgconfig:/usr/local/opt/shared-mime-info/share/pkgconfig
 PKG_CONFIG_LIBDIR: /usr/lib/pkgconfig:/usr/local/Homebrew/Library/Homebrew/os/mac/pkgconfig/10.15
 HOMEBREW_GIT: git
 HOMEBREW_SDKROOT: /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk
 ACLOCAL_PATH: /usr/local/opt/gettext/share/aclocal:/usr/local/share/aclocal
-PATH: /usr/local/Homebrew/Library/Homebrew/shims/mac/super:/usr/local/opt/libpng/bin:/usr/local/opt/freetype/bin:/usr/local/opt/fontconfig/bin:/usr/local/opt/gettext/bin:/usr/local/opt/pcre/bin:/usr/local/opt/gdbm/bin:/usr/local/opt/openssl@1.1/bin:/usr/local/opt/sqlite/bin:/usr/local/opt/xz/bin:/usr/local/opt/python/bin:/usr/local/opt/glib/bin:/usr/local/opt/cairo/bin:/usr/local/opt/fribidi/bin:/usr/local/opt/graphite2/bin:/usr/local/opt/icu4c/bin:/usr/local/opt/harfbuzz/bin:/usr/local/opt/jpeg/bin:/usr/local/opt/libde265/bin:/usr/local/opt/shared-mime-info/bin:/usr/local/opt/x265/bin:/usr/local/opt/libheif/bin:/usr/local/opt/libtiff/bin:/usr/local/opt/libtool/bin:/usr/local/opt/little-cms2/bin:/usr/local/opt/openexr/bin:/usr/local/opt/openjpeg/bin:/usr/local/opt/webp/bin:/usr/local/opt/imagemagick/bin:/usr/local/opt/gdk-pixbuf/bin:/usr/local/opt/libcroco/bin:/usr/local/opt/pango/bin:/usr/local/opt/librsvg/bin:/usr/bin:/bin:/usr/sbin:/sbin
+PATH: /usr/local/Homebrew/Library/Homebrew/shims/mac/super:/usr/local/opt/libpng/bin:/usr/local/opt/freetype/bin:/usr/local/opt/fontconfig/bin:/usr/local/opt/gettext/bin:/usr/local/opt/pcre/bin:/usr/local/opt/gdbm/bin:/usr/local/opt/openssl@1.1/bin:/usr/local/opt/sqlite/bin:/usr/local/opt/xz/bin:/usr/local/opt/python/bin:/usr/local/opt/glib/bin:/usr/local/opt/cairo/bin:/usr/local/opt/fribidi/bin:/usr/local/opt/graphite2/bin:/usr/local/opt/icu4c/bin:/usr/local/opt/harfbuzz/bin:/usr/local/opt/pango/bin:/usr/local/opt/jpeg/bin:/usr/local/opt/libde265/bin:/usr/local/opt/shared-mime-info/bin:/usr/local/opt/x265/bin:/usr/local/opt/libheif/bin:/usr/local/opt/libtiff/bin:/usr/local/opt/libtool/bin:/usr/local/opt/little-cms2/bin:/usr/local/opt/openexr/bin:/usr/local/opt/openjpeg/bin:/usr/local/opt/webp/bin:/usr/local/opt/imagemagick/bin:/usr/local/opt/gdk-pixbuf/bin:/usr/local/opt/libcroco/bin:/usr/local/opt/librsvg/bin:/usr/bin:/bin:/usr/sbin:/sbin
