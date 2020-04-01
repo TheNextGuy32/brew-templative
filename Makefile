@@ -17,6 +17,9 @@ install:
 	brew tap thenextguy32/homebrew-templative
 	brew install templative
 
+logs:
+	cp /Users/oliverbarnum/Library/Logs/Homebrew/templative/26.pip log
+
 clear:
 	sudo rm '/usr/local/bin/templative'
 	brew uninstall templative

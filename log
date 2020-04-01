@@ -1,4 +1,4 @@
-2020-03-31 22:55:58 -0700
+2020-04-01 00:56:38 -0700
 
 /usr/local/Cellar/templative/0.2.0/libexec/bin/pip
 install
@@ -7,27 +7,27 @@ install
 --no-binary
 :all:
 --ignore-installed
-/private/tmp/templative--Pillow-20200331-8445-ip6ni0/Pillow-7.0.0
+/private/tmp/templative--Pillow-20200401-21715-1mmil0q/Pillow-7.0.0
 
 Non-user install because user site-packages disabled
-Created temporary directory: /private/tmp/pip-ephem-wheel-cache-lbtwak2j
-Created temporary directory: /private/tmp/pip-req-tracker-oq7j6b9u
-Initialized build tracking at /private/tmp/pip-req-tracker-oq7j6b9u
-Created build tracker: /private/tmp/pip-req-tracker-oq7j6b9u
-Entered build tracker: /private/tmp/pip-req-tracker-oq7j6b9u
-Created temporary directory: /private/tmp/pip-install-eek4efh9
-Processing /private/tmp/templative--Pillow-20200331-8445-ip6ni0/Pillow-7.0.0
-  Created temporary directory: /private/tmp/pip-req-build-fpwsfbpv
-  Added file:///private/tmp/templative--Pillow-20200331-8445-ip6ni0/Pillow-7.0.0 to build tracker '/private/tmp/pip-req-tracker-oq7j6b9u'
-    Running setup.py (path:/private/tmp/pip-req-build-fpwsfbpv/setup.py) egg_info for package from file:///private/tmp/templative--Pillow-20200331-8445-ip6ni0/Pillow-7.0.0
+Created temporary directory: /private/tmp/pip-ephem-wheel-cache-36b1mahz
+Created temporary directory: /private/tmp/pip-req-tracker-j4gglhgu
+Initialized build tracking at /private/tmp/pip-req-tracker-j4gglhgu
+Created build tracker: /private/tmp/pip-req-tracker-j4gglhgu
+Entered build tracker: /private/tmp/pip-req-tracker-j4gglhgu
+Created temporary directory: /private/tmp/pip-install-a9vt09ln
+Processing /private/tmp/templative--Pillow-20200401-21715-1mmil0q/Pillow-7.0.0
+  Created temporary directory: /private/tmp/pip-req-build-cywsyx46
+  Added file:///private/tmp/templative--Pillow-20200401-21715-1mmil0q/Pillow-7.0.0 to build tracker '/private/tmp/pip-req-tracker-j4gglhgu'
+    Running setup.py (path:/private/tmp/pip-req-build-cywsyx46/setup.py) egg_info for package from file:///private/tmp/templative--Pillow-20200401-21715-1mmil0q/Pillow-7.0.0
     Running command python setup.py egg_info
     running egg_info
-    creating /private/tmp/pip-req-build-fpwsfbpv/pip-egg-info/Pillow.egg-info
-    writing /private/tmp/pip-req-build-fpwsfbpv/pip-egg-info/Pillow.egg-info/PKG-INFO
-    writing dependency_links to /private/tmp/pip-req-build-fpwsfbpv/pip-egg-info/Pillow.egg-info/dependency_links.txt
-    writing top-level names to /private/tmp/pip-req-build-fpwsfbpv/pip-egg-info/Pillow.egg-info/top_level.txt
-    writing manifest file '/private/tmp/pip-req-build-fpwsfbpv/pip-egg-info/Pillow.egg-info/SOURCES.txt'
-    reading manifest file '/private/tmp/pip-req-build-fpwsfbpv/pip-egg-info/Pillow.egg-info/SOURCES.txt'
+    creating /private/tmp/pip-req-build-cywsyx46/pip-egg-info/Pillow.egg-info
+    writing /private/tmp/pip-req-build-cywsyx46/pip-egg-info/Pillow.egg-info/PKG-INFO
+    writing dependency_links to /private/tmp/pip-req-build-cywsyx46/pip-egg-info/Pillow.egg-info/dependency_links.txt
+    writing top-level names to /private/tmp/pip-req-build-cywsyx46/pip-egg-info/Pillow.egg-info/top_level.txt
+    writing manifest file '/private/tmp/pip-req-build-cywsyx46/pip-egg-info/Pillow.egg-info/SOURCES.txt'
+    reading manifest file '/private/tmp/pip-req-build-cywsyx46/pip-egg-info/Pillow.egg-info/SOURCES.txt'
     reading manifest template 'MANIFEST.in'
     warning: no files found matching '*.c'
     warning: no files found matching '*.h'
@@ -43,14 +43,14 @@ Processing /private/tmp/templative--Pillow-20200331-8445-ip6ni0/Pillow-7.0.0
     warning: no previously-included files matching '*.so' found anywhere in distribution
     no previously-included directories found matching '.azure-pipelines'
     no previously-included directories found matching '.travis'
-    writing manifest file '/private/tmp/pip-req-build-fpwsfbpv/pip-egg-info/Pillow.egg-info/SOURCES.txt'
-  Source in /private/tmp/pip-req-build-fpwsfbpv has version 7.0.0, which satisfies requirement Pillow==7.0.0 from file:///private/tmp/templative--Pillow-20200331-8445-ip6ni0/Pillow-7.0.0
-  Removed Pillow==7.0.0 from file:///private/tmp/templative--Pillow-20200331-8445-ip6ni0/Pillow-7.0.0 from build tracker '/private/tmp/pip-req-tracker-oq7j6b9u'
+    writing manifest file '/private/tmp/pip-req-build-cywsyx46/pip-egg-info/Pillow.egg-info/SOURCES.txt'
+  Source in /private/tmp/pip-req-build-cywsyx46 has version 7.0.0, which satisfies requirement Pillow==7.0.0 from file:///private/tmp/templative--Pillow-20200401-21715-1mmil0q/Pillow-7.0.0
+  Removed Pillow==7.0.0 from file:///private/tmp/templative--Pillow-20200401-21715-1mmil0q/Pillow-7.0.0 from build tracker '/private/tmp/pip-req-tracker-j4gglhgu'
 Skipping wheel build for Pillow, due to binaries being disabled for it.
 Installing collected packages: Pillow
-  Created temporary directory: /private/tmp/pip-record-1rtm5xuq
+  Created temporary directory: /private/tmp/pip-record-73k4pzlq
     Running setup.py install for Pillow: started
-    Running command /usr/local/Cellar/templative/0.2.0/libexec/bin/python3.7 -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/private/tmp/pip-req-build-fpwsfbpv/setup.py'"'"'; __file__='"'"'/private/tmp/pip-req-build-fpwsfbpv/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record /private/tmp/pip-record-1rtm5xuq/install-record.txt --single-version-externally-managed --compile --install-headers /usr/local/Cellar/templative/0.2.0/libexec/bin/../include/site/python3.7/Pillow
+    Running command /usr/local/Cellar/templative/0.2.0/libexec/bin/python3.7 -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/private/tmp/pip-req-build-cywsyx46/setup.py'"'"'; __file__='"'"'/private/tmp/pip-req-build-cywsyx46/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record /private/tmp/pip-record-73k4pzlq/install-record.txt --single-version-externally-managed --compile --install-headers /usr/local/Cellar/templative/0.2.0/libexec/bin/../include/site/python3.7/Pillow
     running install
     running build
     running build_py
@@ -180,7 +180,7 @@ Installing collected packages: Pillow
        https://pillow.readthedocs.io/en/latest/installation.html
 
     Traceback (most recent call last):
-      File "/private/tmp/pip-req-build-fpwsfbpv/setup.py", line 892, in <module>
+      File "/private/tmp/pip-req-build-cywsyx46/setup.py", line 892, in <module>
         zip_safe=not (debug_build() or PLATFORM_MINGW),
       File "/usr/local/Cellar/templative/0.2.0/libexec/lib/python3.7/site-packages/setuptools/__init__.py", line 144, in setup
         return distutils.core.setup(**attrs)
@@ -206,7 +206,7 @@ Installing collected packages: Pillow
         cmd_obj.run()
       File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/distutils/command/build_ext.py", line 340, in run
         self.build_extensions()
-      File "/private/tmp/pip-req-build-fpwsfbpv/setup.py", line 687, in build_extensions
+      File "/private/tmp/pip-req-build-cywsyx46/setup.py", line 687, in build_extensions
         raise RequiredDependencyException(f)
     __main__.RequiredDependencyException: zlib
 
@@ -214,7 +214,7 @@ Installing collected packages: Pillow
 
     Traceback (most recent call last):
       File "<string>", line 1, in <module>
-      File "/private/tmp/pip-req-build-fpwsfbpv/setup.py", line 907, in <module>
+      File "/private/tmp/pip-req-build-cywsyx46/setup.py", line 907, in <module>
         raise RequiredDependencyException(msg)
     __main__.RequiredDependencyException:
 
@@ -227,9 +227,9 @@ Installing collected packages: Pillow
 
     Running setup.py install for Pillow: finished with status 'error'
 Cleaning up...
-  Removing source in /private/tmp/pip-req-build-fpwsfbpv
-Removed build tracker: '/private/tmp/pip-req-tracker-oq7j6b9u'
-ERROR: Command errored out with exit status 1: /usr/local/Cellar/templative/0.2.0/libexec/bin/python3.7 -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/private/tmp/pip-req-build-fpwsfbpv/setup.py'"'"'; __file__='"'"'/private/tmp/pip-req-build-fpwsfbpv/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record /private/tmp/pip-record-1rtm5xuq/install-record.txt --single-version-externally-managed --compile --install-headers /usr/local/Cellar/templative/0.2.0/libexec/bin/../include/site/python3.7/Pillow Check the logs for full command output.
+  Removing source in /private/tmp/pip-req-build-cywsyx46
+Removed build tracker: '/private/tmp/pip-req-tracker-j4gglhgu'
+ERROR: Command errored out with exit status 1: /usr/local/Cellar/templative/0.2.0/libexec/bin/python3.7 -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/private/tmp/pip-req-build-cywsyx46/setup.py'"'"'; __file__='"'"'/private/tmp/pip-req-build-cywsyx46/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record /private/tmp/pip-record-73k4pzlq/install-record.txt --single-version-externally-managed --compile --install-headers /usr/local/Cellar/templative/0.2.0/libexec/bin/../include/site/python3.7/Pillow Check the logs for full command output.
 Exception information:
 Traceback (most recent call last):
   File "/usr/local/Cellar/templative/0.2.0/libexec/lib/python3.7/site-packages/pip/_internal/cli/base_command.py", line 186, in _main
@@ -246,15 +246,15 @@ Traceback (most recent call last):
     spinner=spinner,
   File "/usr/local/Cellar/templative/0.2.0/libexec/lib/python3.7/site-packages/pip/_internal/utils/subprocess.py", line 242, in call_subprocess
     raise InstallationError(exc_msg)
-pip._internal.exceptions.InstallationError: Command errored out with exit status 1: /usr/local/Cellar/templative/0.2.0/libexec/bin/python3.7 -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/private/tmp/pip-req-build-fpwsfbpv/setup.py'"'"'; __file__='"'"'/private/tmp/pip-req-build-fpwsfbpv/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record /private/tmp/pip-record-1rtm5xuq/install-record.txt --single-version-externally-managed --compile --install-headers /usr/local/Cellar/templative/0.2.0/libexec/bin/../include/site/python3.7/Pillow Check the logs for full command output.
+pip._internal.exceptions.InstallationError: Command errored out with exit status 1: /usr/local/Cellar/templative/0.2.0/libexec/bin/python3.7 -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/private/tmp/pip-req-build-cywsyx46/setup.py'"'"'; __file__='"'"'/private/tmp/pip-req-build-cywsyx46/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record /private/tmp/pip-record-73k4pzlq/install-record.txt --single-version-externally-managed --compile --install-headers /usr/local/Cellar/templative/0.2.0/libexec/bin/../include/site/python3.7/Pillow Check the logs for full command output.
 
 HOMEBREW_VERSION: 2.2.11-56-ged09857
 ORIGIN: https://github.com/Homebrew/brew.git
 HEAD: ed0985783aab8e9e8702a4aad27fbb4108f8c29a
-Last commit: 18 hours ago
+Last commit: 20 hours ago
 Core tap ORIGIN: https://github.com/Homebrew/homebrew-core
 Core tap HEAD: 89d93309ba2bc0e931d1ed4e6ee968a7a3af0b47
-Core tap last commit: 2 hours ago
+Core tap last commit: 4 hours ago
 HOMEBREW_PREFIX: /usr/local
 HOMEBREW_CACHE: /Users/oliverbarnum/Library/Caches/Homebrew
 HOMEBREW_LOGS: /Users/oliverbarnum/Library/Logs/Homebrew
@@ -272,13 +272,13 @@ XQuartz: 2.7.11 => /opt/X11
 HOMEBREW_CC: clang
 HOMEBREW_CXX: clang++
 MAKEFLAGS: -j4
-CMAKE_PREFIX_PATH: /usr/local/opt/gettext:/usr/local/opt/libffi:/usr/local/opt/openssl@1.1:/usr/local/opt/readline:/usr/local/opt/sqlite:/usr/local/opt/icu4c:/usr/local/opt/zlib:/usr/local
+CMAKE_PREFIX_PATH: /usr/local/opt/gettext:/usr/local/opt/libffi:/usr/local/opt/openssl@1.1:/usr/local/opt/readline:/usr/local/opt/sqlite:/usr/local/opt/icu4c:/usr/local
 CMAKE_INCLUDE_PATH: /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/usr/include/libxml2:/Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/Versions/Current/Headers
 CMAKE_LIBRARY_PATH: /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/Versions/Current/Libraries
 CMAKE_FRAMEWORK_PATH: /usr/local/opt/python/Frameworks
-PKG_CONFIG_PATH: /usr/local/opt/jpeg/lib/pkgconfig:/usr/local/opt/libpng/lib/pkgconfig:/usr/local/opt/freetype/lib/pkgconfig:/usr/local/opt/fontconfig/lib/pkgconfig:/usr/local/opt/libffi/lib/pkgconfig:/usr/local/opt/pcre/lib/pkgconfig:/usr/local/opt/openssl@1.1/lib/pkgconfig:/usr/local/opt/readline/lib/pkgconfig:/usr/local/opt/sqlite/lib/pkgconfig:/usr/local/opt/xz/lib/pkgconfig:/usr/local/opt/python/lib/pkgconfig:/usr/local/opt/glib/lib/pkgconfig:/usr/local/opt/lzo/lib/pkgconfig:/usr/local/opt/pixman/lib/pkgconfig:/usr/local/opt/cairo/lib/pkgconfig:/usr/local/opt/fribidi/lib/pkgconfig:/usr/local/opt/graphite2/lib/pkgconfig:/usr/local/opt/icu4c/lib/pkgconfig:/usr/local/opt/harfbuzz/lib/pkgconfig:/usr/local/opt/ilmbase/lib/pkgconfig:/usr/local/opt/libde265/lib/pkgconfig:/usr/local/opt/x265/lib/pkgconfig:/usr/local/opt/libheif/lib/pkgconfig:/usr/local/opt/libtiff/lib/pkgconfig:/usr/local/opt/little-cms2/lib/pkgconfig:/usr/local/opt/openexr/lib/pkgconfig:/usr/local/opt/openjpeg/lib/pkgconfig:/usr/local/opt/webp/lib/pkgconfig:/usr/local/opt/imagemagick/lib/pkgconfig:/usr/local/opt/gdk-pixbuf/lib/pkgconfig:/usr/local/opt/libcroco/lib/pkgconfig:/usr/local/opt/pango/lib/pkgconfig:/usr/local/opt/librsvg/lib/pkgconfig:/usr/local/opt/zlib/lib/pkgconfig:/usr/local/opt/shared-mime-info/share/pkgconfig
+PKG_CONFIG_PATH: /usr/local/opt/libpng/lib/pkgconfig:/usr/local/opt/freetype/lib/pkgconfig:/usr/local/opt/fontconfig/lib/pkgconfig:/usr/local/opt/libffi/lib/pkgconfig:/usr/local/opt/pcre/lib/pkgconfig:/usr/local/opt/openssl@1.1/lib/pkgconfig:/usr/local/opt/readline/lib/pkgconfig:/usr/local/opt/sqlite/lib/pkgconfig:/usr/local/opt/xz/lib/pkgconfig:/usr/local/opt/python/lib/pkgconfig:/usr/local/opt/glib/lib/pkgconfig:/usr/local/opt/lzo/lib/pkgconfig:/usr/local/opt/pixman/lib/pkgconfig:/usr/local/opt/cairo/lib/pkgconfig:/usr/local/opt/fribidi/lib/pkgconfig:/usr/local/opt/graphite2/lib/pkgconfig:/usr/local/opt/icu4c/lib/pkgconfig:/usr/local/opt/harfbuzz/lib/pkgconfig:/usr/local/opt/ilmbase/lib/pkgconfig:/usr/local/opt/jpeg/lib/pkgconfig:/usr/local/opt/libde265/lib/pkgconfig:/usr/local/opt/x265/lib/pkgconfig:/usr/local/opt/libheif/lib/pkgconfig:/usr/local/opt/libtiff/lib/pkgconfig:/usr/local/opt/little-cms2/lib/pkgconfig:/usr/local/opt/openexr/lib/pkgconfig:/usr/local/opt/openjpeg/lib/pkgconfig:/usr/local/opt/webp/lib/pkgconfig:/usr/local/opt/imagemagick/lib/pkgconfig:/usr/local/opt/gdk-pixbuf/lib/pkgconfig:/usr/local/opt/libcroco/lib/pkgconfig:/usr/local/opt/pango/lib/pkgconfig:/usr/local/opt/librsvg/lib/pkgconfig:/usr/local/opt/shared-mime-info/share/pkgconfig
 PKG_CONFIG_LIBDIR: /usr/lib/pkgconfig:/usr/local/Homebrew/Library/Homebrew/os/mac/pkgconfig/10.15
 HOMEBREW_GIT: git
 HOMEBREW_SDKROOT: /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk
 ACLOCAL_PATH: /usr/local/opt/gettext/share/aclocal:/usr/local/share/aclocal
-PATH: /usr/local/Homebrew/Library/Homebrew/shims/mac/super:/usr/local/opt/jpeg/bin:/usr/local/opt/libpng/bin:/usr/local/opt/freetype/bin:/usr/local/opt/fontconfig/bin:/usr/local/opt/gettext/bin:/usr/local/opt/pcre/bin:/usr/local/opt/gdbm/bin:/usr/local/opt/openssl@1.1/bin:/usr/local/opt/sqlite/bin:/usr/local/opt/xz/bin:/usr/local/opt/python/bin:/usr/local/opt/glib/bin:/usr/local/opt/cairo/bin:/usr/local/opt/fribidi/bin:/usr/local/opt/graphite2/bin:/usr/local/opt/icu4c/bin:/usr/local/opt/harfbuzz/bin:/usr/local/opt/libde265/bin:/usr/local/opt/shared-mime-info/bin:/usr/local/opt/x265/bin:/usr/local/opt/libheif/bin:/usr/local/opt/libtiff/bin:/usr/local/opt/libtool/bin:/usr/local/opt/little-cms2/bin:/usr/local/opt/openexr/bin:/usr/local/opt/openjpeg/bin:/usr/local/opt/webp/bin:/usr/local/opt/imagemagick/bin:/usr/local/opt/gdk-pixbuf/bin:/usr/local/opt/libcroco/bin:/usr/local/opt/pango/bin:/usr/local/opt/librsvg/bin:/usr/bin:/bin:/usr/sbin:/sbin
+PATH: /usr/local/Homebrew/Library/Homebrew/shims/mac/super:/usr/local/opt/libpng/bin:/usr/local/opt/freetype/bin:/usr/local/opt/fontconfig/bin:/usr/local/opt/gettext/bin:/usr/local/opt/pcre/bin:/usr/local/opt/gdbm/bin:/usr/local/opt/openssl@1.1/bin:/usr/local/opt/sqlite/bin:/usr/local/opt/xz/bin:/usr/local/opt/python/bin:/usr/local/opt/glib/bin:/usr/local/opt/cairo/bin:/usr/local/opt/fribidi/bin:/usr/local/opt/graphite2/bin:/usr/local/opt/icu4c/bin:/usr/local/opt/harfbuzz/bin:/usr/local/opt/jpeg/bin:/usr/local/opt/libde265/bin:/usr/local/opt/shared-mime-info/bin:/usr/local/opt/x265/bin:/usr/local/opt/libheif/bin:/usr/local/opt/libtiff/bin:/usr/local/opt/libtool/bin:/usr/local/opt/little-cms2/bin:/usr/local/opt/openexr/bin:/usr/local/opt/openjpeg/bin:/usr/local/opt/webp/bin:/usr/local/opt/imagemagick/bin:/usr/local/opt/gdk-pixbuf/bin:/usr/local/opt/libcroco/bin:/usr/local/opt/pango/bin:/usr/local/opt/librsvg/bin:/usr/bin:/bin:/usr/sbin:/sbin

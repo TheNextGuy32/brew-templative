@@ -1,5 +1,6 @@
 class Templative < Formula
   include Language::Python::Virtualenv
+  # https://pillow.readthedocs.io/en/stable/installation.html#building-on-macos
   # https://stackoverflow.com/questions/34631806/fail-during-installation-of-pillow-python-module-in-linux/34631976#34631976
   # https://github.com/python-pillow/Pillow/issues/3438
   # https://github.com/python-pillow/Pillow/issues/3959
@@ -11,7 +12,6 @@ class Templative < Formula
   sha256 "d763fbe844b7f731265dd43703373407aeb00c3e59dfb75b8e98ff9a8acdcb6d"
   head "https://github.com/TheNextGuy32/templative.git"
 
- 
   depends_on "cairo"
   depends_on "fontconfig"
   depends_on "freetype"
@@ -52,7 +52,6 @@ class Templative < Formula
   uses_from_macos "sqlite"
   uses_from_macos "zlib"
   
-
   resource "aiofile" do
     url "https://files.pythonhosted.org/packages/71/7c/d6df3b2c8fb380ef7f678c366dc4485dfeb389967d373b1dc5d53bd1dcf0/aiofile-1.5.2.tar.gz"
     sha256 "229078abbaab87adfcaad0fa7766b9b8251d42d0242deac6166da433b027ef1f"
@@ -183,10 +182,10 @@ class Templative < Formula
     sha256 "aee283c49601fa4c13adc64c09c978838a7e812f85377ae130a24d7198c0331e"
   end
 
-  resource "Pillow" do
-    url "https://files.pythonhosted.org/packages/39/47/f28067b187dd664d205f75b07dcc6e0e95703e134008a14814827eebcaab/Pillow-7.0.0.tar.gz"
-    sha256 "4d9ed9a64095e031435af120d3c910148067087541131e82b3e8db302f4c8946"
-  end
+  # resource "Pillow" do
+  #   url "https://files.pythonhosted.org/packages/39/47/f28067b187dd664d205f75b07dcc6e0e95703e134008a14814827eebcaab/Pillow-7.0.0.tar.gz"
+  #   sha256 "4d9ed9a64095e031435af120d3c910148067087541131e82b3e8db302f4c8946"
+  # end
   
   resource "filetype" do
     url "https://files.pythonhosted.org/packages/e8/53/298887541ae479f8467d4d23e028c6d15f9811da25c582297fd3869666b7/filetype-1.0.5.tar.gz"
