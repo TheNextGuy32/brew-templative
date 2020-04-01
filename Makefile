@@ -8,7 +8,7 @@ upload:
 	git commit -m "Do the thing"
 	git push origin master
 	brew tap thenextguy32/homebrew-templative
-	brew audit --new-formula templative
+	# brew audit --new-formula templative
 	brew install templative
 
 release: clear upload
