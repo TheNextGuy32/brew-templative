@@ -32,7 +32,7 @@ class Templative < Formula
   depends_on "openssl@1.1"
   depends_on "pcre"
   depends_on "pixman"
-  depend_on "librsvg"
+  depends_on "librsvg"
   depends_on "python"
   depends_on "readline"
   depends_on "shared-mime-info"
