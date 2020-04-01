@@ -175,8 +175,8 @@ class Templative < Formula
   end
 
   resource "Pillow" do
-    url "https://github.com/GlezSeoane/Pillow/archive/6.1.0.tar.gz"
-    sha256 "9a3a613e7780362605b10765274389b3e9a6fe3201dd2bceeb422d45c5c9ba18"
+    url "https://files.pythonhosted.org/packages/39/47/f28067b187dd664d205f75b07dcc6e0e95703e134008a14814827eebcaab/Pillow-7.0.0.tar.gz"
+    sha256 "4d9ed9a64095e031435af120d3c910148067087541131e82b3e8db302f4c8946"
   end
   
   resource "filetype" do
