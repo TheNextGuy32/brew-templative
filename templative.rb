@@ -36,8 +36,8 @@ class Templative < Formula
   depends_on "little-cms2"
   depends_on "lzo"
   depends_on "openexr"
-  depends_on "openjpeg"
   depends_on "librsvg"
+  depends_on "openjpeg"
   depends_on "openssl@1.1"
   depends_on "pcre"
   depends_on "pixman"
@@ -53,8 +53,9 @@ class Templative < Formula
   uses_from_macos "libffi"
   uses_from_macos "libxml2"
   uses_from_macos "libxslt"
-  uses_from_macos "zlib"
   uses_from_macos "sqlite"
+  uses_from_macos "zlib"
+  
 
   resource "aiofile" do
     url "https://files.pythonhosted.org/packages/71/7c/d6df3b2c8fb380ef7f678c366dc4485dfeb389967d373b1dc5d53bd1dcf0/aiofile-1.5.2.tar.gz"
