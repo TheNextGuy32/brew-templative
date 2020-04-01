@@ -315,35 +315,35 @@ class Templative < Formula
   def install
     virtualenv_install_with_resources(:using => "python@3.7")
 
-    resource("Pillow").stage do
-      inreplace "setup.py" do |s|
-        sdkprefix = MacOS.sdk_path_if_needed ? MacOS.sdk_path : ""
-        s.gsub! "openjpeg.h", "probably_not_a_header_called_this_eh.h"
-        s.gsub! "ZLIB_ROOT = None",
-                "ZLIB_ROOT = ('#{sdkprefix}/usr/lib', '#{sdkprefix}/usr/include')"
-        s.gsub! "JPEG_ROOT = None",
-                "JPEG_ROOT = ('#{Formula["jpeg"].opt_prefix}/lib', '#{Formula["jpeg"].opt_prefix}/include')"
-        s.gsub! "FREETYPE_ROOT = None",
-                "FREETYPE_ROOT = ('#{Formula["freetype"].opt_prefix}/lib', " \
-                                 "'#{Formula["freetype"].opt_prefix}/include')"
-      end
+    # resource("Pillow").stage do
+    #   inreplace "setup.py" do |s|
+    #     sdkprefix = MacOS.sdk_path_if_needed ? MacOS.sdk_path : ""
+    #     s.gsub! "openjpeg.h", "probably_not_a_header_called_this_eh.h"
+    #     s.gsub! "ZLIB_ROOT = None",
+    #             "ZLIB_ROOT = ('#{sdkprefix}/usr/lib', '#{sdkprefix}/usr/include')"
+    #     s.gsub! "JPEG_ROOT = None",
+    #             "JPEG_ROOT = ('#{Formula["jpeg"].opt_prefix}/lib', '#{Formula["jpeg"].opt_prefix}/include')"
+    #     s.gsub! "FREETYPE_ROOT = None",
+    #             "FREETYPE_ROOT = ('#{Formula["freetype"].opt_prefix}/lib', " \
+    #                              "'#{Formula["freetype"].opt_prefix}/include')"
+    #   end
 
-      unless MacOS::CLT.installed?
-        ENV.append "CFLAGS", "-I#{MacOS.sdk_path}/System/Library/Frameworks/Tk.framework/Versions/8.5/Headers"
-      end
-      venv.pip_install Pathname.pwd
-    end
+    #   unless MacOS::CLT.installed?
+    #     ENV.append "CFLAGS", "-I#{MacOS.sdk_path}/System/Library/Frameworks/Tk.framework/Versions/8.5/Headers"
+    #   end
+    #   venv.pip_install Pathname.pwd
+    # end
 
-    # Fix "ld: file not found: /usr/lib/system/libsystem_darwin.dylib" for lxml
-    ENV["SDKROOT"] = MacOS.sdk_path if MacOS.version == :sierra
+    # # Fix "ld: file not found: /usr/lib/system/libsystem_darwin.dylib" for lxml
+    # ENV["SDKROOT"] = MacOS.sdk_path if MacOS.version == :sierra
 
-    res = resources.map(&:name).to_set - ["Pillow"]
+    # res = resources.map(&:name).to_set - ["Pillow"]
 
-    res.each do |r|
-      venv.pip_install resource(r)
-    end
+    # res.each do |r|
+    #   venv.pip_install resource(r)
+    # end
 
-    venv.pip_install_and_link buildpath
+    # venv.pip_install_and_link buildpath
   end
 
   test do
