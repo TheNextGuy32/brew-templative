@@ -13,6 +13,7 @@ class Templative < Formula
   head "https://github.com/TheNextGuy32/templative.git"
 
   depends_on "cairo"
+  depends_on "pango"
   depends_on "fontconfig"
   depends_on "freetype"
   depends_on "fribidi"
@@ -182,10 +183,10 @@ class Templative < Formula
     sha256 "aee283c49601fa4c13adc64c09c978838a7e812f85377ae130a24d7198c0331e"
   end
 
-  # resource "Pillow" do
-  #   url "https://files.pythonhosted.org/packages/39/47/f28067b187dd664d205f75b07dcc6e0e95703e134008a14814827eebcaab/Pillow-7.0.0.tar.gz"
-  #   sha256 "4d9ed9a64095e031435af120d3c910148067087541131e82b3e8db302f4c8946"
-  # end
+  resource "Pillow" do
+    url "https://files.pythonhosted.org/packages/39/47/f28067b187dd664d205f75b07dcc6e0e95703e134008a14814827eebcaab/Pillow-7.0.0.tar.gz"
+    sha256 "4d9ed9a64095e031435af120d3c910148067087541131e82b3e8db302f4c8946"
+  end
   
   resource "filetype" do
     url "https://files.pythonhosted.org/packages/e8/53/298887541ae479f8467d4d23e028c6d15f9811da25c582297fd3869666b7/filetype-1.0.5.tar.gz"
@@ -315,35 +316,37 @@ class Templative < Formula
   def install
     virtualenv_install_with_resources(:using => "python@3.7")
 
-    # resource("Pillow").stage do
-    #   inreplace "setup.py" do |s|
-    #     sdkprefix = MacOS.sdk_path_if_needed ? MacOS.sdk_path : ""
-    #     s.gsub! "openjpeg.h", "probably_not_a_header_called_this_eh.h"
-    #     s.gsub! "ZLIB_ROOT = None",
-    #             "ZLIB_ROOT = ('#{sdkprefix}/usr/lib', '#{sdkprefix}/usr/include')"
-    #     s.gsub! "JPEG_ROOT = None",
-    #             "JPEG_ROOT = ('#{Formula["jpeg"].opt_prefix}/lib', '#{Formula["jpeg"].opt_prefix}/include')"
-    #     s.gsub! "FREETYPE_ROOT = None",
-    #             "FREETYPE_ROOT = ('#{Formula["freetype"].opt_prefix}/lib', " \
-    #                              "'#{Formula["freetype"].opt_prefix}/include')"
-    #   end
+    resource("Pillow").stage do
+      inreplace "setup.py" do |s|
+        sdkprefix = MacOS.sdk_path_if_needed ? MacOS.sdk_path : ""
+        puts "\n\n\n\n\n\n\n\n\n\n"
+        puts sdkprefix
+        s.gsub! "openjpeg.h", "probably_not_a_header_called_this_eh.h"
+        s.gsub! "ZLIB_ROOT = None",
+                "ZLIB_ROOT = ('#{sdkprefix}/usr/lib', '#{sdkprefix}/usr/include')"
+        s.gsub! "JPEG_ROOT = None",
+                "JPEG_ROOT = ('#{Formula["jpeg"].opt_prefix}/lib', '#{Formula["jpeg"].opt_prefix}/include')"
+        s.gsub! "FREETYPE_ROOT = None",
+                "FREETYPE_ROOT = ('#{Formula["freetype"].opt_prefix}/lib', " \
+                                 "'#{Formula["freetype"].opt_prefix}/include')"
+      end
 
-    #   unless MacOS::CLT.installed?
-    #     ENV.append "CFLAGS", "-I#{MacOS.sdk_path}/System/Library/Frameworks/Tk.framework/Versions/8.5/Headers"
-    #   end
-    #   venv.pip_install Pathname.pwd
-    # end
+      unless MacOS::CLT.installed?
+        ENV.append "CFLAGS", "-I#{MacOS.sdk_path}/System/Library/Frameworks/Tk.framework/Versions/8.5/Headers"
+      end
+      venv.pip_install Pathname.pwd
+    end
 
-    # # Fix "ld: file not found: /usr/lib/system/libsystem_darwin.dylib" for lxml
-    # ENV["SDKROOT"] = MacOS.sdk_path if MacOS.version == :sierra
+    # Fix "ld: file not found: /usr/lib/system/libsystem_darwin.dylib" for lxml
+    ENV["SDKROOT"] = MacOS.sdk_path if MacOS.version == :sierra
 
-    # res = resources.map(&:name).to_set - ["Pillow"]
+    res = resources.map(&:name).to_set - ["Pillow"]
 
-    # res.each do |r|
-    #   venv.pip_install resource(r)
-    # end
+    res.each do |r|
+      venv.pip_install resource(r)
+    end
 
-    # venv.pip_install_and_link buildpath
+    venv.pip_install_and_link buildpath
   end
 
   test do
