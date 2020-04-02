@@ -1,3 +1,28 @@
+class XquartzRequirement < Requirement
+  fatal true
+
+  satisfy(:build_env => false) { which("xquartz") }
+
+  def message; <<~EOS
+    xquartz is required; install it via one of:
+      brew cask install xquartz
+    EOS
+  end
+end
+
+class InkscapeRequirement < Requirement
+  fatal true
+
+  satisfy(:build_env => false) { which("inkscape") }
+
+  def message; <<~EOS
+    inkscape is required; install it by running:
+      brew install caskformula/caskformula/inkscape
+      brew cask install inkscape
+    EOS
+  end
+end
+
 class Templative < Formula
   include Language::Python::Virtualenv
   desc "Automate card sheet -> TCG"
@@ -39,6 +64,7 @@ class Templative < Formula
   depends_on "webp"
   depends_on "x265"
   depends_on "xz"
+  depends_on InkscapeRequirement
 
   uses_from_macos "icu4c"
   uses_from_macos "libffi"
