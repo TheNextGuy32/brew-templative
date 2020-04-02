@@ -1,0 +1,41 @@
+2020-04-02 04:46:04 -0700
+
+./configure
+--disable-debug
+--disable-dependency-tracking
+--disable-silent-rules
+--prefix=/usr/local/Cellar/templative/0.2.2
+
+
+HOMEBREW_VERSION: 2.2.11-92-gd1f1833
+ORIGIN: https://github.com/Homebrew/brew.git
+HEAD: d1f183311ba369ed948ab97b497602fd36e1a8b9
+Last commit: 2 hours ago
+Core tap ORIGIN: https://github.com/Homebrew/homebrew-core
+Core tap HEAD: c974d3d6af4665c86ae1f2c11a1d728fde89f8d5
+Core tap last commit: 3 hours ago
+HOMEBREW_PREFIX: /usr/local
+HOMEBREW_CACHE: /Users/oliverbarnum/Library/Caches/Homebrew
+HOMEBREW_LOGS: /Users/oliverbarnum/Library/Logs/Homebrew
+CPU: quad-core 64-bit broadwell
+Homebrew Ruby: 2.6.3 => /usr/local/Homebrew/Library/Homebrew/vendor/portable-ruby/2.6.3/bin/ruby
+Clang: 11.0 build 1103
+Git: 2.24.1 => /Applications/Xcode.app/Contents/Developer/usr/bin/git
+Curl: 7.64.1 => /usr/bin/curl
+Java: 1.8.0_242, 1.7.0_71
+macOS: 10.15.4-x86_64
+CLT: 11.4.0.0.1.1583798712
+Xcode: 11.4
+XQuartz: 2.7.11 => /opt/X11
+
+HOMEBREW_CC: clang
+HOMEBREW_CXX: clang++
+MAKEFLAGS: -j4
+CMAKE_PREFIX_PATH: /usr/local
+CMAKE_INCLUDE_PATH: /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/usr/include/libxml2:/Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/Versions/Current/Headers
+CMAKE_LIBRARY_PATH: /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/Versions/Current/Libraries
+PKG_CONFIG_LIBDIR: /usr/lib/pkgconfig:/usr/local/Homebrew/Library/Homebrew/os/mac/pkgconfig/10.15
+HOMEBREW_GIT: git
+HOMEBREW_SDKROOT: /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk
+ACLOCAL_PATH: /usr/local/share/aclocal
+PATH: /usr/local/Homebrew/Library/Homebrew/shims/mac/super:/usr/bin:/bin:/usr/sbin:/sbin

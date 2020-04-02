@@ -27,5 +27,5 @@ logs:
 refresh: clear install
 
 sha:
-	brew create $(url)
+	brew create $(url) --python
 	sudo rm /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/templative.rb
