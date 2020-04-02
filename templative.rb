@@ -27,8 +27,8 @@ class Templative < Formula
   include Language::Python::Virtualenv
   desc "Automate card sheet -> TCG"
   homepage "https://github.com/TheNextGuy32/templative"
-  url "https://github.com/TheNextGuy32/templative/archive/0.2.1.tar.gz"
-  sha256 "0b1196f466a55d254ce512f9d61e9c55a99e63c22f65bc1c539ef008fb9d9f97"
+  url "https://github.com/TheNextGuy32/templative/archive/0.2.2.tar.gz"
+  sha256 "c6adcdd695e1c0d8dd846d8608348dba3626e7bd857cb16f2aeffc79759294a0"
   head "https://github.com/TheNextGuy32/templative.git"
 
   depends_on "cairo"
