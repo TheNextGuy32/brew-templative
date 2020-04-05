@@ -1,10 +1,10 @@
-class Templative < Formula
+class SvgScissors < Formula
   include Language::Python::Virtualenv
   desc "Automate card sheet -> TCG"
-  homepage "https://github.com/TheNextGuy32/templative"
-  url "https://github.com/TheNextGuy32/templative/archive/0.3.1.tar.gz"
-  sha256 "8f1477825516ef79276103f4df10836030d65a05eee7721820683fcfe4573f99"
-  head "https://github.com/TheNextGuy32/templative.git"
+  homepage "https://github.com/TheNextGuy32/svgScissors"
+  url "https://github.com/TheNextGuy32/svgScissors/archive/0.0.5.tar.gz"
+  sha256 "9fd1880983866686d5a311ddbc1fcf7e6cc9ee5444086c086e5323147b1af1a5"
+  head "https://github.com/TheNextGuy32/svgScissors.git"
 
   depends_on "cairo"
   depends_on "pango"
@@ -39,7 +39,6 @@ class Templative < Formula
   depends_on "webp"
   depends_on "x265"
   depends_on "xz"
-  depends_on "svgScissors"
   depends_on InkscapeRequirement
 
   uses_from_macos "icu4c"
