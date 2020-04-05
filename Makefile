@@ -3,6 +3,10 @@
 audit:
 	brew audit --new-formula templative
 
+fetch:
+	brew tap thenextguy32/homebrew-templative
+	brew fetch $(package) --build-from-source
+
 upload: 
 	git add .
 	git commit -m "Do the thing"

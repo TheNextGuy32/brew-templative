@@ -15,8 +15,8 @@ class Svgscissors < Formula
   include Language::Python::Virtualenv
   desc "Automate card sheet -> TCG"
   homepage "https://github.com/TheNextGuy32/svgScissors"
-  url "https://github.com/TheNextGuy32/svgScissors/archive/0.0.5.tar.gz"
-  sha256 "9fd1880983866686d5a311ddbc1fcf7e6cc9ee5444086c086e5323147b1af1a5"
+  url "https://github.com/TheNextGuy32/svgScissors/archive/0.0.7.tar.gz"
+  sha256 "81d014068d54739df721829c0f2ac992e07a69e442247d6e0dd95bb341750b90"
   head "https://github.com/TheNextGuy32/svgScissors.git"
 
   depends_on "cairo"
@@ -106,16 +106,6 @@ class Svgscissors < Formula
     sha256 "84ab92ed1c4d4f16916e05906b6b75a6c0fb5db821cc65e70cbd64a3e2a5eaae"
   end
 
-  resource "click" do
-    url "https://files.pythonhosted.org/packages/4e/ab/5d6bc3b697154018ef196f5b17d958fac3854e2efbc39ea07a284d4a6a9b/click-7.1.1.tar.gz"
-    sha256 "8a18b4ea89d8820c5d0c7da8a64b2c324b4dabb695804dbfea19b9be9d88c0cc"
-  end
-
-  resource "cssselect2" do
-    url "https://files.pythonhosted.org/packages/03/37/0e28364d4c2bce998171199ab59650b3174c077ef2c8b6d4ff57aa47676a/cssselect2-0.3.0.tar.gz"
-    sha256 "5c2716f06b5de93f701d5755a9666f2ee22cbcd8b4da8adddfc30095ffea3abc"
-  end
-
   resource "defusedxml" do
     url "https://files.pythonhosted.org/packages/a4/5f/f8aa58ca0cf01cbcee728abc9d88bfeb74e95e6cb4334cfd5bed5673ea77/defusedxml-0.6.0.tar.gz"
     sha256 "f684034d135af4c6cbb949b8a4d2ed61634515257a67299e5f940fbaa34377f5"
@@ -136,11 +126,6 @@ class Svgscissors < Formula
     sha256 "33d4bca7be0fa039f4e84d50ab00531047e53d6ee8ffbc83501ea602c169cae1"
   end
 
-  resource "gameCrafterClient" do
-    url "https://files.pythonhosted.org/packages/6c/5b/aef56153f41b98c79a302d512d85cb95a5bf7267f5dca7775a97efd09b24/gameCrafterClient-1.0.0.tar.gz"
-    sha256 "6c87c6f107daa1a9b0d1b6bc868bd288b10ac884d9ac5289a5335f7e0b7d52dd"
-  end
-
   resource "h2" do
     url "https://files.pythonhosted.org/packages/08/0a/033df0fc05fe94f72517ccd393dd9ff99b1773fd198307638e6d3568a518/h2-3.2.0.tar.gz"
     sha256 "875f41ebd6f2c44781259005b157faed1a5031df3ae5aa7bcb4628a6c0782f14"
@@ -149,16 +134,6 @@ class Svgscissors < Formula
   resource "hpack" do
     url "https://files.pythonhosted.org/packages/44/f1/b4440e46e265a29c0cb7b09b6daec6edf93c79eae713cfed93fbbf8716c5/hpack-3.0.0.tar.gz"
     sha256 "8eec9c1f4bfae3408a3f30500261f7e6a65912dc138526ea054f9ad98892e9d2"
-  end
-
-  resource "html5lib" do
-    url "https://files.pythonhosted.org/packages/85/3e/cf449cf1b5004e87510b9368e7a5f1acd8831c2d6691edd3c62a0823f98f/html5lib-1.0.1.tar.gz"
-    sha256 "66cb0dcfdbbc4f9c3ba1a63fdb511ffdbd4f513b2b6d81b80cd26ce6b3fb3736"
-  end
-
-  resource "http3" do
-    url "https://files.pythonhosted.org/packages/ae/47/7d25c71f5dab11f7c2a70766baf76b8f079706f66d14d047cca81d167c48/http3-0.6.7.tar.gz"
-    sha256 "dbf9beedc58d8bbcf6e681a9d63d9e7cd8da346e1ffb512e02e9bf097d91f0bf"
   end
 
   resource "hyperframe" do
@@ -191,16 +166,6 @@ class Svgscissors < Formula
     sha256 "3b633a50873156d777e1f1075ba4d8e96a6ad0a3ca42aa3ea9a6259f93f18921"
   end
 
-  resource "requests" do
-    url "https://files.pythonhosted.org/packages/f5/4f/280162d4bd4d8aad241a21aecff7a6e46891b905a4341e7ab549ebaf7915/requests-2.23.0.tar.gz"
-    sha256 "b3f43d496c6daba4493e7c431722aeb7dbc6288f52a6e04e7b6023b0247817e6"
-  end
-
-  resource "requests-async" do
-    url "https://files.pythonhosted.org/packages/4a/e7/afbe47fa17068c80a5e80d75e1e960a98a5cfefe3590108ba76d9560cefc/requests-async-0.6.2.tar.gz"
-    sha256 "8f128b66dec2974aa263e24410914b1829d3e1506497364c2edfa10112f55e0b"
-  end
-
   resource "rfc3986" do
     url "https://files.pythonhosted.org/packages/34/c9/bcba83f13f628e947e23a0e54e18d0a6f13e5d03ca4ec04def0105c81bfc/rfc3986-1.3.2.tar.gz"
     sha256 "0344d0bd428126ce554e7ca2b61787b6a28d2bbd19fc70ed2dd85efe31176405"
@@ -209,11 +174,6 @@ class Svgscissors < Formula
   resource "svgutils" do
     url "https://files.pythonhosted.org/packages/8c/35/21e59c17e0d435b953b0c1a8ffd914f4bf3411b52ae04030c0c4153ef929/svgutils-0.3.1.tar.gz"
     sha256 "cd52474765fd460ad2389947f77589de96142f6f0ce3f61e08ccfabeac2ff8af"
-  end
-
-  resource "tabulate" do
-    url "https://files.pythonhosted.org/packages/57/6f/213d075ad03c84991d44e63b6516dd7d185091df5e1d02a660874f8f7e1e/tabulate-0.8.7.tar.gz"
-    sha256 "db2723a20d04bcda8522165c73eea7c300eda74e0ce852d9022e0159d7895007"
   end
 
   resource "tinycss2" do
@@ -229,11 +189,6 @@ class Svgscissors < Formula
   resource "Wand" do
     url "https://files.pythonhosted.org/packages/a3/ff/22a74061e56888c8813c4c86274e166f71a1305ea76dd4c75fcd14e51dd3/Wand-0.5.9.tar.gz"
     sha256 "6eaca78e53fbe329b163f0f0b28f104de98edbd69a847268cc5d6a6e392b9b28"
-  end
-
-  resource "WeasyPrint" do
-    url "https://files.pythonhosted.org/packages/b1/f7/e3618eb126bc683638d36f4fc61b0e4027f078628f7150da7f82e4d06c30/WeasyPrint-51.tar.gz"
-    sha256 "b3e971973a4f03c1430e6b838b75b5b57630415fcae8666d2be1347630ff6d6a"
   end
 
   resource "webencodings" do
@@ -314,11 +269,6 @@ class Svgscissors < Formula
   resource "markdown2" do
     url "https://files.pythonhosted.org/packages/e3/93/d37055743009d1a492b2670cc215831a388b3d6e4a28b7672fdf0f7854f5/markdown2-2.3.8.tar.gz"
     sha256 "7ff88e00b396c02c8e1ecd8d176cfa418fb01fe81234dcea77803e7ce4f05dbe"
-  end
-
-  resource "svgScissors" do
-    url "https://files.pythonhosted.org/packages/98/ef/32d46dff345ba81aa4c3678e7cbb457aeb4fa46a899edf1d2fe9bd3f5b8b/svgScissors-0.0.4.tar.gz"
-    sha256 "63023a4dbefa54cfafd7231275203a43f0e3153c96a58ef12591f1f01f50e691"
   end
 
   def install
