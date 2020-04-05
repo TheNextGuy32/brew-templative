@@ -139,8 +139,8 @@ class Templative < Formula
   end
 
   resource "gameCrafterClient" do
-    url "https://files.pythonhosted.org/packages/6c/5b/aef56153f41b98c79a302d512d85cb95a5bf7267f5dca7775a97efd09b24/gameCrafterClient-1.0.0.tar.gz"
-    sha256 "6c87c6f107daa1a9b0d1b6bc868bd288b10ac884d9ac5289a5335f7e0b7d52dd"
+    url "https://files.pythonhosted.org/packages/2e/1d/ec4849c2244fd6dcc0f229f6d3969a9fdab9454c4c23b2e743c90e625f73/gameCrafterClient-1.0.2.tar.gz"
+    sha256 "3b1eb0a73dfe0672f95fe0af8380c49caf4a5b3856b796a1e60dd7b3df18503a"
   end
 
   resource "h2" do
@@ -319,8 +319,8 @@ class Templative < Formula
   end
 
   resource "svgScissors" do
-    url "https://files.pythonhosted.org/packages/98/ef/32d46dff345ba81aa4c3678e7cbb457aeb4fa46a899edf1d2fe9bd3f5b8b/svgScissors-0.0.4.tar.gz"
-    sha256 "63023a4dbefa54cfafd7231275203a43f0e3153c96a58ef12591f1f01f50e691"
+    url "https://files.pythonhosted.org/packages/cb/05/54e43d0abe8d9aafbc68dad2ab12e81b22e4d14987d7c1ac2a5359eaa4b2/svgScissors-0.0.5.tar.gz"
+    sha256 "6f5825a4fff4295f4dc40caee0d62275fd365553ca8ba69051ccff98d55f8274"
   end
 
   def install
