@@ -6,6 +6,7 @@ class Templative < Formula
   sha256 "8f1477825516ef79276103f4df10836030d65a05eee7721820683fcfe4573f99"
   head "https://github.com/TheNextGuy32/templative.git"
 
+  depends_on InkscapeRequirement
   depends_on "cairo"
   depends_on "pango"
   depends_on "fontconfig"
@@ -40,7 +41,7 @@ class Templative < Formula
   depends_on "x265"
   depends_on "xz"
   depends_on "svgScissors"
-  depends_on InkscapeRequirement
+  
 
   uses_from_macos "icu4c"
   uses_from_macos "libffi"
