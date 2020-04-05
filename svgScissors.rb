@@ -11,7 +11,7 @@ class InkscapeRequirement < Requirement
   end
 end
 
-class SvgScissors < Formula
+class Svgscissors < Formula
   include Language::Python::Virtualenv
   desc "Automate card sheet -> TCG"
   homepage "https://github.com/TheNextGuy32/svgScissors"
