@@ -21,45 +21,7 @@ class Svgscissors < Formula
 
   depends_on "cairo"
   depends_on "pango"
-  depends_on "fontconfig"
-  depends_on "freetype"
-  depends_on "fribidi"
-  depends_on "gdbm"
-  depends_on "gettext"
-  depends_on "glib"
-  depends_on "graphite2"
-  depends_on "harfbuzz"
-  depends_on "ilmbase"
-  depends_on "imagemagick"
-  depends_on "jpeg"
-  depends_on "libde265"
-  depends_on "libheif"
-  depends_on "libomp"
-  depends_on "libpng"
-  depends_on "librsvg"
-  depends_on "libtiff"
-  depends_on "libtool"
-  depends_on "little-cms2"
-  depends_on "lzo"
-  depends_on "openexr"
-  depends_on "openjpeg"
-  depends_on "openssl@1.1"
-  depends_on "pcre"
-  depends_on "pixman"
-  depends_on "python"
-  depends_on "readline"
-  depends_on "shared-mime-info"
-  depends_on "webp"
-  depends_on "x265"
-  depends_on "xz"
-  depends_on InkscapeRequirement
-
-  uses_from_macos "icu4c"
-  uses_from_macos "libffi"
-  uses_from_macos "libxml2"
-  uses_from_macos "libxslt"
-  uses_from_macos "sqlite"
-  uses_from_macos "zlib"
+  depends_on "pango"
   
   resource "asyncio" do
     url "https://files.pythonhosted.org/packages/da/54/054bafaf2c0fb8473d423743e191fcdf49b2c1fd5e9af3524efbe097bafd/asyncio-3.4.3.tar.gz"
@@ -97,38 +59,7 @@ class Svgscissors < Formula
   end
 
   def install
-    # Fix "ld: file not found: /usr/lib/system/libsystem_darwin.dylib" for lxml
-    ENV["SDKROOT"] = MacOS.sdk_path if MacOS.version == :sierra
-
-    venv = virtualenv_create(libexec, "python3")
-
-    resource("Pillow").stage do
-      inreplace "setup.py" do |s|
-        sdkprefix = MacOS.sdk_path_if_needed ? MacOS.sdk_path : ""
-        s.gsub! "openjpeg.h",
-          "probably_not_a_header_called_this_eh.h"
-        s.gsub! "ZLIB_ROOT = None",
-          "ZLIB_ROOT = ('#{sdkprefix}/usr/lib', '#{sdkprefix}/usr/include')"
-        s.gsub! "JPEG_ROOT = None",
-          "JPEG_ROOT = ('#{Formula["jpeg"].opt_prefix}/lib', '#{Formula["jpeg"].opt_prefix}/include')"
-        s.gsub! "FREETYPE_ROOT = None",
-          "FREETYPE_ROOT = ('#{Formula["freetype"].opt_prefix}/lib', '#{Formula["freetype"].opt_prefix}/include')"
-      end
-
-      # avoid triggering "helpful" distutils code that doesn't recognize Xcode 7 .tbd stubs
-      unless MacOS::CLT.installed?
-        ENV.append "CFLAGS", "-I#{MacOS.sdk_path}/System/Library/Frameworks/Tk.framework/Versions/8.5/Headers"
-      end
-      venv.pip_install Pathname.pwd
-    end
-
-    res = resources.map(&:name).to_set - ["entrypoints", "Pillow"]
-
-    res.each do |r|
-      venv.pip_install resource(r)
-    end
-
-    venv.pip_install_and_link buildpath
+    virtualenv_install_with_resources
   end
 
 
