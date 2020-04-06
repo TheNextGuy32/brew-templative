@@ -21,7 +21,8 @@ class Svgscissors < Formula
 
   depends_on "cairo"
   depends_on "pango"
-  depends_on "pango"
+  depends_on "imagemagick"
+  depends_on InkscapeRequirement
   
   resource "asyncio" do
     url "https://files.pythonhosted.org/packages/da/54/054bafaf2c0fb8473d423743e191fcdf49b2c1fd5e9af3524efbe097bafd/asyncio-3.4.3.tar.gz"
