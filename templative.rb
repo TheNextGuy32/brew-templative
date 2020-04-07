@@ -9,6 +9,11 @@ class Templative < Formula
   depends_on "python"
   depends_on "svgscissors"
   
+  resource "asyncio" do
+    url "https://files.pythonhosted.org/packages/da/54/054bafaf2c0fb8473d423743e191fcdf49b2c1fd5e9af3524efbe097bafd/asyncio-3.4.3.tar.gz"
+    sha256 "83360ff8bc97980e4ff25c964c7bd3923d333d177aa4f7fb736b019f26c7cb41"
+  end
+
   resource "aiofile" do
     url "https://files.pythonhosted.org/packages/71/7c/d6df3b2c8fb380ef7f678c366dc4485dfeb389967d373b1dc5d53bd1dcf0/aiofile-1.5.2.tar.gz"
     sha256 "229078abbaab87adfcaad0fa7766b9b8251d42d0242deac6166da433b027ef1f"
