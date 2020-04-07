@@ -1,16 +1,3 @@
-class InkscapeRequirement < Requirement
-  fatal true
-
-  satisfy(:build_env => false) { which("inkscape") }
-
-  def message; <<~EOS
-    inkscape is required; install it by running:
-      brew install caskformula/caskformula/inkscape
-      brew cask install inkscape
-    EOS
-  end
-end
-
 class Templative < Formula
   include Language::Python::Virtualenv
   desc "Automate card sheet -> TCG"
@@ -19,7 +6,7 @@ class Templative < Formula
   sha256 "8f1477825516ef79276103f4df10836030d65a05eee7721820683fcfe4573f99"
   head "https://github.com/TheNextGuy32/templative.git"
 
-  depends_on "svgScissors"
+  depends_on "svgscissors"
   
   resource "aiofile" do
     url "https://files.pythonhosted.org/packages/71/7c/d6df3b2c8fb380ef7f678c366dc4485dfeb389967d373b1dc5d53bd1dcf0/aiofile-1.5.2.tar.gz"
@@ -94,11 +81,6 @@ class Templative < Formula
   resource "h11" do
     url "https://files.pythonhosted.org/packages/34/5a/abaa557d20b210117d8c3e6b0b817ce9b329b2e81f87612e60102a924323/h11-0.9.0.tar.gz"
     sha256 "33d4bca7be0fa039f4e84d50ab00531047e53d6ee8ffbc83501ea602c169cae1"
-  end
-
-  resource "gameCrafterClient" do
-    url "https://files.pythonhosted.org/packages/9e/ae/da1efb4a798ad41276842727d8876d25b34f4d9f4c52a74cae207deb8f33/gameCrafterClient-1.0.4.tar.gz"
-    sha256 "94f56bf30056911e9596d5667a1ca054307ecb1a8de27d4f1454e09a6f57b84a"
   end
 
   resource "h2" do
@@ -274,11 +256,16 @@ class Templative < Formula
   resource "markdown2" do
     url "https://files.pythonhosted.org/packages/e3/93/d37055743009d1a492b2670cc215831a388b3d6e4a28b7672fdf0f7854f5/markdown2-2.3.8.tar.gz"
     sha256 "7ff88e00b396c02c8e1ecd8d176cfa418fb01fe81234dcea77803e7ce4f05dbe"
+  end 
+
+  resource "svgscissors" do
+    url "https://files.pythonhosted.org/packages/e2/47/a52a91d31024a869a06e5700b531e1aa656444bde0a96d31a9ac540ab37c/svgscissors-0.0.11.tar.gz"
+    sha256 "46d3ade89ffddb3caa6ecf7bfea2633e08002f1ce4ffe0614c501345310557cb"
   end
 
-  resource "svgScissors" do
-    url "https://files.pythonhosted.org/packages/d4/ad/dca406b3cc6ab62675d26af471c654af978c8e82e927d1fb1b7de638d468/svgScissors-0.0.7.tar.gz"
-    sha256 "173cdb440c2c14bde0b8e96609dc13e7f67edbf84a8e5eb40c6a48a880b05d4a"
+  resource "gamecrafterclient" do
+    url "https://files.pythonhosted.org/packages/c9/63/0d5f20bb329289bf430af5ec67e0707ff25963018c0094617e28271ad6e9/gamecrafterclient-1.0.8.tar.gz"
+    sha256 "a25f3e6807827830db163ee23f36a1c73b2326df2c9ec24230e63b930e464e5e"
   end
 
   def install

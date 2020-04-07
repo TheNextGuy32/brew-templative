@@ -14,10 +14,10 @@ end
 class Svgscissors < Formula
   include Language::Python::Virtualenv
   desc "Automate card sheet -> TCG"
-  homepage "https://github.com/TheNextGuy32/svgScissors"
-  url "https://github.com/TheNextGuy32/svgScissors/archive/0.0.7.tar.gz"
-  sha256 "81d014068d54739df721829c0f2ac992e07a69e442247d6e0dd95bb341750b90"
-  head "https://github.com/TheNextGuy32/svgScissors.git"
+  homepage "https://github.com/TheNextGuy32/svgscissors"
+  url "https://github.com/TheNextGuy32/svgscissors/archive/0.0.11.tar.gz"
+  sha256 "2174d3a0e59290a0f8c2160e331df355f075076dcd26148c490669d1834406bb"
+  head "https://github.com/TheNextGuy32/svgscissors.git"
 
   depends_on "cairo"
   depends_on "pango"
@@ -62,8 +62,7 @@ class Svgscissors < Formula
   def install
     virtualenv_install_with_resources
   end
-
-
+  
   test do
     system "#{bin}/cli", "--help"
   end
