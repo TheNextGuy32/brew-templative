@@ -6,6 +6,7 @@ class Templative < Formula
   sha256 "e02198b56b6fcc91fe717dbe80a33ec811fc47b2e0ac5aefc30aebc4f0014ad6"
   head "https://github.com/TheNextGuy32/templative.git"
 
+  depends_on "python"
   depends_on "svgscissors"
   
   resource "aiofile" do

@@ -19,6 +19,7 @@ class Svgscissors < Formula
   sha256 "2174d3a0e59290a0f8c2160e331df355f075076dcd26148c490669d1834406bb"
   head "https://github.com/TheNextGuy32/svgscissors.git"
 
+  depends_on "python"
   depends_on "cairo"
   depends_on "pango"
   depends_on "imagemagick"

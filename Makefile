@@ -14,7 +14,7 @@ upload:
 
 install:
 	brew tap thenextguy32/homebrew-templative
-	brew install svgScissors
+	brew install svgscissors
 	brew install templative
 
 release: upload install
