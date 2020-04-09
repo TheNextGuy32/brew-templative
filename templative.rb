@@ -1,13 +1,29 @@
+class InkscapeRequirement < Requirement
+  fatal true
+
+  satisfy(:build_env => false) { which("inkscape") }
+
+  def message; <<~EOS
+    inkscape is required; install it by running:
+      brew install caskformula/caskformula/inkscape
+      brew cask install inkscape
+    EOS
+  end
+end
+
 class Templative < Formula
   include Language::Python::Virtualenv
   desc "Automate card sheet -> TCG"
   homepage "https://github.com/TheNextGuy32/templative"
-  url "https://github.com/TheNextGuy32/templative/archive/0.3.3.tar.gz"
-  sha256 "f5453f994ee04dff0a35da9c29354ac807c94a110d02aae892dc42c81a079b2a"
+  url "https://github.com/TheNextGuy32/templative/archive/0.3.4.tar.gz"
+  sha256 "8480882ed18995712c31acc0f756c8b46edbe8333bad03184fc041bedae431e8"
   head "https://github.com/TheNextGuy32/templative.git"
 
   depends_on "python"
-  depends_on "svgscissors"
+  depends_on "cairo"
+  depends_on "pango"
+  depends_on "imagemagick"
+  depends_on InkscapeRequirement
   
   resource "asyncio" do
     url "https://files.pythonhosted.org/packages/da/54/054bafaf2c0fb8473d423743e191fcdf49b2c1fd5e9af3524efbe097bafd/asyncio-3.4.3.tar.gz"
