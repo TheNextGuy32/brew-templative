@@ -235,6 +235,11 @@ class Templative < Formula
     sha256 "139d2625547dbfa5fb0b81daebb39601c478c21956dc57e2e07b74450a8c506b"
   end
 
+  resource "md2pdf" do
+    url "https://files.pythonhosted.org/packages/5c/a0/576df7a2d0daca3e7733cb1c43f4d6c2a8b2a722a497d9a73d10914bf21e/md2pdf-0.4.tar.gz"
+    sha256 "8bbe13f41a750542beba81fd1a2d79f61c5a4a8fb1519ff44e5b21d93590779d"
+  end
+
   resource "stevedore" do
     url "https://files.pythonhosted.org/packages/be/19/83fd12828f879f53b85fe820925776aecda710944279e47a2dac53444adc/stevedore-1.32.0.tar.gz"
     sha256 "18afaf1d623af5950cc0f7e75e70f917784c73b652a34a12d90b309451b5500b"
