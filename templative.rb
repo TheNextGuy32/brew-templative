@@ -15,8 +15,8 @@ class Templative < Formula
   include Language::Python::Virtualenv
   desc "Automate card sheet -> TCG"
   homepage "https://github.com/TheNextGuy32/templative"
-  url "https://github.com/TheNextGuy32/templative/archive/0.3.6.tar.gz"
-  sha256 "154a816d8f61b4774338b54bbc9341ce494b8a664e0149bc39396e7e94dce3a0"
+  url "https://github.com/TheNextGuy32/templative/archive/0.3.7.tar.gz"
+  sha256 "c1617e92fc4a388c899c41be40d51cf7d93ffdbbcfbbeb1f6ac851bc1f28bbd1"
   head "https://github.com/TheNextGuy32/templative.git"
 
   depends_on "python"
@@ -273,16 +273,6 @@ class Templative < Formula
   resource "markdown2" do
     url "https://files.pythonhosted.org/packages/e3/93/d37055743009d1a492b2670cc215831a388b3d6e4a28b7672fdf0f7854f5/markdown2-2.3.8.tar.gz"
     sha256 "7ff88e00b396c02c8e1ecd8d176cfa418fb01fe81234dcea77803e7ce4f05dbe"
-  end 
-
-  resource "svgscissors" do
-    url "https://files.pythonhosted.org/packages/e2/47/a52a91d31024a869a06e5700b531e1aa656444bde0a96d31a9ac540ab37c/svgscissors-0.0.11.tar.gz"
-    sha256 "46d3ade89ffddb3caa6ecf7bfea2633e08002f1ce4ffe0614c501345310557cb"
-  end
-
-  resource "gamecrafterclient" do
-    url "https://files.pythonhosted.org/packages/c9/63/0d5f20bb329289bf430af5ec67e0707ff25963018c0094617e28271ad6e9/gamecrafterclient-1.0.8.tar.gz"
-    sha256 "a25f3e6807827830db163ee23f36a1c73b2326df2c9ec24230e63b930e464e5e"
   end
 
   resource "asyncio" do
