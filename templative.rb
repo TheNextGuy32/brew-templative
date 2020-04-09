@@ -15,8 +15,8 @@ class Templative < Formula
   include Language::Python::Virtualenv
   desc "Automate card sheet -> TCG"
   homepage "https://github.com/TheNextGuy32/templative"
-  url "https://github.com/TheNextGuy32/templative/archive/0.3.4.tar.gz"
-  sha256 "8480882ed18995712c31acc0f756c8b46edbe8333bad03184fc041bedae431e8"
+  url "https://github.com/TheNextGuy32/templative/archive/0.3.5.tar.gz"
+  sha256 "3a3327d58e928c99b49cfa05e866bbecfaf40bc24b012d605379b9a8f20ef997"
   head "https://github.com/TheNextGuy32/templative.git"
 
   depends_on "python"
@@ -233,11 +233,6 @@ class Templative < Formula
   resource "pbr" do
     url "https://files.pythonhosted.org/packages/98/8a/defa5215d2dcf98cc80f4783e951a8356e38f352f7a169ae11670dcb1f25/pbr-5.4.4.tar.gz"
     sha256 "139d2625547dbfa5fb0b81daebb39601c478c21956dc57e2e07b74450a8c506b"
-  end
-
-  resource "md2pdf" do
-    url "https://files.pythonhosted.org/packages/5c/a0/576df7a2d0daca3e7733cb1c43f4d6c2a8b2a722a497d9a73d10914bf21e/md2pdf-0.4.tar.gz"
-    sha256 "8bbe13f41a750542beba81fd1a2d79f61c5a4a8fb1519ff44e5b21d93590779d"
   end
 
   resource "stevedore" do
